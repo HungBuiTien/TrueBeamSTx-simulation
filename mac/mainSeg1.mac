@@ -1,0 +1,98 @@
+/control/execute                                            mac/verbose.mac
+
+# Set the path to the materials database
+/gate/geometry/setMaterialDatabase                          data/Materials.db
+
+#------------------------------------------------------------------------------------------#
+# 					                    GEOMETRY
+#------------------------------------------------------------------------------------------#
+# World volume
+/control/execute                                            mac/geo/world.mac
+# Linac Head
+/control/execute                                            mac/geo/linacHead.mac
+# Setup phsp plane positions
+/control/execute                                            mac/geo/phspPlanes.mac
+
+
+# Setup position parameters
+#
+/gate/mylinac/placement/setRotationAngle        -0.0 deg
+/gate/mylinac/placement/setTranslation          0.0 1000.0 0.0 mm
+/gate/myLinacHead/placement/setRotationAngle    0.0 deg
+/gate/X1/placement/setTranslation               87.62218276849424 -403.23525174328853 0.0 mm
+/gate/X2/placement/setTranslation               -87.62218276849424 -403.23525174328853 0.0 mm
+/gate/Y1/placement/setTranslation               0.0 -314.65022738322835 -75.57505432437033 mm
+/gate/Y2/placement/setTranslation               0.0 -314.65022738322835 75.57505432437033 mm
+/gate/X1/placement/setRotationAngle             2.6607900833942186 deg
+/gate/X2/placement/setRotationAngle             -2.6607900833942186 deg
+/gate/Y1/placement/setRotationAngle             2.6063708540286914 deg
+/gate/Y2/placement/setRotationAngle             -2.6063708540286914 deg
+
+
+#------------------------------------------------------------------------------------------#
+# 				                          OUTPUT
+#------------------------------------------------------------------------------------------#
+#
+/gate/actor/addActor                                        PhaseSpaceActor IAEAPhaseSpaceCyl
+/gate/actor/IAEAPhaseSpaceCyl/save                          output/myIAEA.root
+/gate/actor/IAEAPhaseSpaceCyl/attachTo                      outPhSpCylinder
+/gate/actor/IAEAPhaseSpaceCyl/enableEkine                   true
+/gate/actor/IAEAPhaseSpaceCyl/enableXPosition               true
+/gate/actor/IAEAPhaseSpaceCyl/enableYPosition               true
+/gate/actor/IAEAPhaseSpaceCyl/enableZPosition               true
+/gate/actor/IAEAPhaseSpaceCyl/enableXDirection              true
+/gate/actor/IAEAPhaseSpaceCyl/enableYDirection              true
+/gate/actor/IAEAPhaseSpaceCyl/enableZDirection              true
+/gate/actor/IAEAPhaseSpaceCyl/enableProductionVolume        false
+/gate/actor/IAEAPhaseSpaceCyl/enableProductionProcess       false
+/gate/actor/IAEAPhaseSpaceCyl/enableParticleName            true
+/gate/actor/IAEAPhaseSpaceCyl/enableWeight                  true
+# Store coordinates in the actor coordinates
+/gate/actor/IAEAPhaseSpaceCyl/useVolumeFrame                true
+# Warning : set this line to true make the particles generated twice
+# when the output file is used as an input
+/gate/actor/IAEAPhaseSpaceCyl/storeSecondaries              false
+
+#------------------------------------------------------------------------------------------#
+# 				                         PHYSICS
+#------------------------------------------------------------------------------------------#
+#
+/gate/physics/addPhysicsList emstandard_opt3
+
+/gate/physics/Gamma/SetCutInRegion                          world 1 mm
+/gate/physics/Electron/SetCutInRegion                       world 1 mm
+/gate/physics/Positron/SetCutInRegion                       world 1 mm
+
+#------------------------------------------------------------------------------------------#
+#									   INITIALIZE 
+#------------------------------------------------------------------------------------------#
+/gate/run/initialize
+
+#------------------------------------------------------------------------------------------#
+#									     SOURCE 
+#------------------------------------------------------------------------------------------#
+#
+/gate/source/addSource                                      MyBeam phaseSpace
+/gate/source/MyBeam/addPhaseSpaceFile                       phsp/IAEAphsp/Varian_TrueBeam6MV_01.IAEAphsp
+/gate/source/MyBeam/addPhaseSpaceFile                       phsp/IAEAphsp/Varian_TrueBeam6MV_02.IAEAphsp
+/gate/source/MyBeam/addPhaseSpaceFile                       phsp/IAEAphsp/Varian_TrueBeam6MV_03.IAEAphsp
+/gate/source/MyBeam/addPhaseSpaceFile                       phsp/IAEAphsp/Varian_TrueBeam6MV_04.IAEAphsp
+/gate/source/MyBeam/addPhaseSpaceFile                       phsp/IAEAphsp/Varian_TrueBeam6MV_05.IAEAphsp
+/gate/source/MyBeam/addPhaseSpaceFile                       phsp/IAEAphsp/Varian_TrueBeam6MV_06.IAEAphsp
+/gate/source/MyBeam/attachTo                                inPhSpVarian
+/gate/source/MyBeam/setParticleType                         gamma
+
+#-------------------------------------------------------------------------------------------
+#									  START 
+#-------------------------------------------------------------------------------------------
+#
+# Select a random number engine
+/gate/random/setEngineName                                  MersenneTwister
+/gate/random/setEngineSeed                                  auto
+
+# Congratulations, you can start. 
+/gate/application/setTotalNumberOfPrimaries                 261682249
+/gate/application/start
+
+# Set the visualization parameters
+#/control/execute                                           mac/visu.mac

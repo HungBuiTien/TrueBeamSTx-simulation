@@ -1,0 +1,11 @@
+/gate/source/addSource                          MyBeam phaseSpace
+/gate/source/MyBeam/addPhaseSpaceFile           pshp/GAGApshp/6FF/6X.pt
+/gate/source/MyBeam/setParticleType             gamma
+/gate/source/MyBeam/setPytorchParams            pshp/GAGApshp/6FF/6X.json
+/gate/source/MyBeam/setPytorchBatchSize         1000000
+/gate/source/MyBeam/attachTo                    gaga_vol
+/gate/source/MyBeam/useRandomSymmetry           true
+/gate/source/MyBeam/ignoreWeight                true
+/gate/random/setEngineName                      MersenneTwister
+/gate/random/setEngineSeed                      auto
+/gate/application/setTotalNumberOfPrimaries     20000

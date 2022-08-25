@@ -1,0 +1,13 @@
+/gate/actor/addActor                         DoseActor  2dosemap
+/gate/actor/2dosemap/save                    output/2dDoseMap.txt
+/gate/actor/2dosemap/attachTo                phantom
+/gate/actor/2dosemap/stepHitType             random
+/gate/actor/2dosemap/setPosition             0 50 0 mm
+/gate/actor/2dosemap/setResolution           100 1 100
+/gate/actor/2dosemap/setSize                 300 5 300 mm
+/gate/actor/2dosemap/saveEveryNSeconds       60
+/gate/actor/2dosemap/enableEdep              true
+/gate/actor/2dosemap/enableUncertaintyEdep   true
+/gate/actor/2dosemap/enableDose              false
+/gate/actor/2dosemap/enableUncertaintyDose   false
+/gate/actor/2dosemap/enableNumberOfHits      false

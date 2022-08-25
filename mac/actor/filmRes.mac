@@ -1,0 +1,6 @@
+/gate/actor/addActor                            DoseActor  filmRes
+/gate/actor/filmRes/save                        output/filmRes.mhd
+/gate/actor/filmRes/attachTo                    filmBox
+/gate/actor/filmRes/stepHitType                 random
+/gate/actor/filmRes/setResolution               100 1 100
+/gate/actor/filmRes/enableDose                  true

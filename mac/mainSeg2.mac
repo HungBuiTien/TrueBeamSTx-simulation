@@ -1,0 +1,81 @@
+/control/execute                                            mac/verbose.mac
+
+#-------------------------------------------------------------------------------------------
+# 					                     GEOMETRY
+#-------------------------------------------------------------------------------------------
+# Set the path to the materials database
+/gate/geometry/setMaterialDatabase                          data/Materials.db
+
+# World
+/control/execute                                            mac/geo/world.mac
+
+# Phase space plane
+/gate/world/daughters/name                                  outPhSpCylinder
+/gate/world/daughters/insert                                cylinder
+/gate/outPhSpCylinder/setMaterial                           Air
+/gate/outPhSpCylinder/geometry/setRmin                      369.9  mm
+/gate/outPhSpCylinder/geometry/setRmax                      370 mm
+/gate/outPhSpCylinder/geometry/setHeight                    1400 mm
+/gate/outPhSpCylinder/vis/setColor                          red
+/gate/outPhSpCylinder/vis/forceWireframe
+/gate/outPhSpCylinder/vis/setVisible                        1
+
+# Water phantom
+/control/execute                                            mac/geo/phantom.mac
+
+# EBT3 film
+/control/execute                                            mac/geo/filmEBT3.mac
+
+#------------------------------------------------------------------------------------------#
+#										 OUTPUT                                            # 
+#------------------------------------------------------------------------------------------#
+# Analysis
+/gate/actor/addActor                                        SimulationStatisticActor stat
+/gate/actor/stat/save                                       output/Seg2-stat.txt
+/gate/actor/stat/saveEveryNSeconds                          60
+
+# Dose actor
+/gate/actor/addActor                                        DoseActor  doseDistribution
+/gate/actor/doseDistribution/save                           output/doseDistribution.mhd
+/gate/actor/doseDistribution/attachTo                       filmBox
+/gate/actor/doseDistribution/stepHitType                    random
+/gate/actor/doseDistribution/setResolution                  100 1 100
+/gate/actor/doseDistribution/enableDose                     true
+/gate/actor/doseDistribution/enableUncertaintyDose          true
+#/gate/actor/doseDistribution/enableEdep                    true
+#/gate/actor/doseDistribution/enableUncertaintyEdep         true
+/gate/actor/doseDistribution/enableDoseToWater              true
+/gate/actor/doseDistribution/enableUncertaintyDoseToWater   true
+/gate/actor/doseDistribution/saveEveryNSeconds              2000
+
+#-------------------------------------------------------------------------------------------
+#										 PHYSICS 
+#-------------------------------------------------------------------------------------------
+/gate/physics/addPhysicsList                                emstandard_opt3
+
+/gate/physics/Gamma/SetCutInRegion                          phantom 0.1 mm
+/gate/physics/Electron/SetCutInRegion                       phantom 0.1 mm
+/gate/physics/Positron/SetCutInRegion                       phantom 0.1 mm
+
+#-------------------------------------------------------------------------------------------
+#									   INITIALIZE 
+#-------------------------------------------------------------------------------------------
+/gate/run/initialize
+
+
+#-------------------------------------------------------------------------------------------
+#									   SOURCE 
+#-------------------------------------------------------------------------------------------
+/gate/source/addSource                                      MyBeam phaseSpace
+/gate/source/MyBeam/addPhaseSpaceFile                       output/myIAEA.root
+/gate/application/setTotalNumberOfPrimaries                 NB_PRIM
+/gate/source/MyBeam/attachTo                                outPhSpCylinder
+
+#-------------------------------------------------------------------------------------------
+#									  START 
+#-------------------------------------------------------------------------------------------
+/gate/random/setEngineName                                  MersenneTwister
+/gate/random/setEngineSeed                                  auto
+
+/gate/application/start
+/gate/application/describe

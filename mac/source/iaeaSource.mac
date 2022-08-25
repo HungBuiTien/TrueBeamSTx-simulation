@@ -1,0 +1,9 @@
+/gate/source/addSource                              MyBeam phaseSpace
+/gate/source/MyBeam/addPhaseSpaceFile               phsp/IAEAphsp/Varian_TrueBeam6MV_01.IAEAphsp
+/gate/source/MyBeam/addPhaseSpaceFile               phsp/IAEAphsp/Varian_TrueBeam6MV_02.IAEAphsp
+/gate/source/MyBeam/addPhaseSpaceFile               phsp/IAEAphsp/Varian_TrueBeam6MV_03.IAEAphsp
+/gate/source/MyBeam/addPhaseSpaceFile               phsp/IAEAphsp/Varian_TrueBeam6MV_04.IAEAphsp
+/gate/source/MyBeam/addPhaseSpaceFile               phsp/IAEAphsp/Varian_TrueBeam6MV_05.IAEAphsp
+/gate/source/MyBeam/addPhaseSpaceFile               phsp/IAEAphsp/Varian_TrueBeam6MV_06.IAEAphsp
+/gate/source/MyBeam/attachTo                        inPhSpVarian
+/gate/source/MyBeam/setParticleType                 gamma

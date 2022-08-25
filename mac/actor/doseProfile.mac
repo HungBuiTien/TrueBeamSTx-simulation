@@ -1,0 +1,13 @@
+/gate/actor/addActor                            DoseActor  doseprofile
+/gate/actor/doseprofile/save                    output/gamma-profile.txt
+/gate/actor/doseprofile/attachTo                phantom
+/gate/actor/doseprofile/stepHitType             random
+/gate/actor/doseprofile/setPosition             0 50 0 mm
+/gate/actor/doseprofile/setResolution           100 1 1
+/gate/actor/doseprofile/setSize                 300 5 5 mm
+/gate/actor/doseprofile/saveEveryNSeconds       60
+/gate/actor/doseprofile/enableEdep              true
+/gate/actor/doseprofile/enableUncertaintyEdep   true
+/gate/actor/doseprofile/enableDose              false
+/gate/actor/doseprofile/enableUncertaintyDose   false
+/gate/actor/doseprofile/enableNumberOfHits      false

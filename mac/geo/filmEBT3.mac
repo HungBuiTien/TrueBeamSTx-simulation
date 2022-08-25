@@ -1,0 +1,40 @@
+
+/gate/phantom/daughters/name                filmBox
+/gate/phantom/daughters/insert              box
+/gate/filmBox/geometry/setXLength           5 cm
+/gate/filmBox/geometry/setYLength           278 um
+/gate/filmBox/geometry/setZLength           5 cm
+/gate/filmBox/placement/setTranslation      0 5 0 cm
+/gate/filmBox/setMaterial                   Vacuum
+/gate/filmBox/vis/setVisible                1
+/gate/filmBox/vis/setColor                  yellow
+
+/gate/filmBox/daughters/name                filmEle
+/gate/filmBox/daughters/insert              box
+/gate/filmEle/geometry/setXLength           5 cm
+/gate/filmEle/geometry/setYLength           125 um
+/gate/filmEle/geometry/setZLength           5 cm
+/gate/filmEle/placement/setTranslation      0 0 -76.5 um
+/gate/filmEle/setMaterial                   Polyester
+/gate/filmEle/vis/setVisible                1
+/gate/filmEle/vis/setColor                  green
+
+/gate/filmBox/daughters/name                filmEle2
+/gate/filmBox/daughters/insert              box
+/gate/filmEle2/geometry/setXLength          5 cm
+/gate/filmEle2/geometry/setYLength          125 um
+/gate/filmEle2/geometry/setZLength          5 cm
+/gate/filmEle2/placement/setTranslation     0 0 76.5 um
+/gate/filmEle2/setMaterial                  Polyester
+/gate/filmEle2/vis/setVisible               1
+/gate/filmEle2/vis/setColor                 green
+
+/gate/filmBox/daughters/name                filmEle3
+/gate/filmBox/daughters/insert              box
+/gate/filmEle3/geometry/setXLength          5 cm
+/gate/filmEle3/geometry/setYLength          28 um
+/gate/filmEle3/geometry/setZLength          5 cm
+/gate/filmEle3/placement/setTranslation     0 0 0 um
+/gate/filmEle3/setMaterial                  Activate
+/gate/filmEle3/vis/setVisible               1
+/gate/filmEle3/vis/setColor                 red
