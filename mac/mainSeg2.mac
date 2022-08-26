@@ -2,7 +2,7 @@
 #/control/execute                               mac/visu.mac
 
 # Geometry
-/gate/geometry/setMaterialDatabase              data/Materials.db # Set the path to the materials database
+/gate/geometry/setMaterialDatabase              data/GateMaterials.db
 /control/execute                                mac/geo/world.mac
 /control/execute                                mac/geo/phsp.mac
 /control/execute                                mac/geo/phantom.mac
