@@ -104,6 +104,20 @@
 /gate/Y2/vis/setVisible 1
 
 # MLC
-/control/execute                                mac/geo/mlc.mac
+#/control/execute                                mac/geo/mlc.mac
+
+# Setup position parameters
+#
+/gate/mylinac/placement/setRotationAngle        -0.0 deg
+/gate/mylinac/placement/setTranslation          0.0 1000.0 0.0 mm
+/gate/myLinacHead/placement/setRotationAngle    0.0 deg
+/gate/X1/placement/setTranslation               87.62218276849424 -403.23525174328853 0.0 mm
+/gate/X2/placement/setTranslation               -87.62218276849424 -403.23525174328853 0.0 mm
+/gate/Y1/placement/setTranslation               0.0 -314.65022738322835 -75.57505432437033 mm
+/gate/Y2/placement/setTranslation               0.0 -314.65022738322835 75.57505432437033 mm
+/gate/X1/placement/setRotationAngle             2.6607900833942186 deg
+/gate/X2/placement/setRotationAngle             -2.6607900833942186 deg
+/gate/Y1/placement/setRotationAngle             2.6063708540286914 deg
+/gate/Y2/placement/setRotationAngle             -2.6063708540286914 deg
 
 

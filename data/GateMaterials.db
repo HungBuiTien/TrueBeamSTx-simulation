@@ -1,5 +1,5 @@
 [Elements]
-Hydrogen:   S= H   ; Z=  1. ; A=   1.01  g/mole
+Hydrogen:   S= H   ; Z=  1. ; A=   1.01  g/mole  
 Helium:     S= He  ; Z=  2. ; A=   4.003 g/mole
 Lithium:    S= Li  ; Z=  3. ; A=   6.941 g/mole
 Beryllium:  S= Be  ; Z=  4. ; A=   9.012 g/mole
@@ -24,77 +24,49 @@ Titanium:   S= Ti  ; Z= 22. ; A=  47.867 g/mole
 Vandium:    S= V   ; Z= 23. ; A=  50.942 g/mole
 Chromium:   S= Cr  ; Z= 24. ; A=  51.996 g/mole
 Manganese:  S= Mn  ; Z= 25. ; A=  54.938 g/mole
+Iron:       S= Fe  ; Z= 26. ; A=  55.845 g/mole
 Cobalt:     S= Co  ; Z= 27. ; A=  58.933 g/mole
+Nickel:     S= Ni  ; Z= 28. ; A=  58.693 g/mole
 Copper:     S= Cu  ; Z= 29. ; A=  63.39  g/mole
 Zinc:       S= Zn  ; Z= 30. ; A=  65.39  g/mole
 Gallium:    S= Ga  ; Z= 31. ; A=  69.723 g/mole
 Germanium:  S= Ge  ; Z= 32. ; A=  72.61  g/mole
-Bromine:    S= Br  ; Z= 35. ; A=  79.901 g/mole
 Yttrium:    S= Y   ; Z= 39. ; A=  88.91  g/mole
+Silver:     S= Ag  ; Z= 47. ; A= 107.868 g/mole
 Cadmium:    S= Cd  ; Z= 48. ; A= 112.41  g/mole
+Tin:        S= Sn  ; Z= 50. ; A= 118.71  g/mole
 Tellurium:  S= Te  ; Z= 52. ; A= 127.6   g/mole
 Iodine:	    S= I   ; Z= 53. ; A= 126.90  g/mole
 Cesium:     S= Cs  ; Z= 55. ; A= 132.905 g/mole
-Tungsten:   S= W   ; Z= 74. ; A= 183.84  g/mole
-Nickel:     S= Ni  ; Z= 28. ; A=  58.693 g/mole
-Iron:       S= Fe  ; Z= 26. ; A=  55.845 g/mole
 Gadolinium: S= Gd  ; Z= 64. ; A= 157.25  g/mole
 Lutetium:   S= Lu  ; Z= 71. ; A= 174.97  g/mole
-Rhenium:    S= Re  ; Z= 75. ; A= 186.207 g/mole
+Tantalum:   S= Ta  ; Z= 73. ; A= 180.95  g/mole
+Tungsten:   S= W   ; Z= 74. ; A= 183.84  g/mole
 Thallium:   S= Tl  ; Z= 81. ; A= 204.37  g/mole
 Lead: 	    S= Pb  ; Z= 82. ; A= 207.20  g/mole
 Bismuth:    S= Bi  ; Z= 83. ; A= 208.98  g/mole
 Uranium:    S= U   ; Z= 92. ; A= 238.03  g/mole
-Silver:     S=Ag   ; Z= 47. ; A= 107.86  g/mole
-Tin:        S=Sn   ; Z= 50. ; A= 118.71  g/mole
-Terbium:    S=Tb   ; Z= 65. ; A= 158.93  g/mole
-Molybden:   S=Mo   ; Z=42.  ; A= 95.94	 g/mole
-Calcium:    S=Ca   ; Z=20.  ; A=40.1     g/mole
-
 
 [Materials]
-
-Jaw: d=18.768 g/cm3; n=4 ; state=Solid
-        +el: name=Tungsten ; f=0.95
-        +el: name=Nickel ; f=0.028
-        +el: name=Iron; f=0.012
-        +el: name=Copper; f=0.01
-
-applicator_material:  d=6.785 g/cm3 ; n=3 ; state=Solid
-        +el: name=Copper ; f=0.01
-        +el: name=Aluminium ; f=0.084
-        +el: name=Zinc ; f=0.906
-
-Prothesis: d=3.97 g/cm3; n=2 ; state=Solid
-        +el: name=Aluminium ; f=0.95
-        +el: name=Oxygen ; f=0.4707
-
-
-Vacuum: d=0.000001 mg/cm3 ; n=1
+Vacuum: d=0.000001 mg/cm3 ; n=1 
 	+el: name=Hydrogen ; n=1
 
-Carbon: d=2.27 g/cm3; n=1; state=solid
-	+el: name=auto; n=1
-
-Mylar: d=1.38 g/cm3; n=3 ; state=Solid
-        +el: name=Hydrogen ; f=0.04196
-        +el: name=Carbon ; f=0.625016
-        +el: name=Oxygen; f=0.333024
-
-Cerrobend: d= 9.40 g/cm3 ; n=2
-	+el: name=Bismuth;     f=0.58
-	+el: name=Tin ;  f=0.42
-
-Copper:	d=8.93 g/cm3; n=1; state=solid
+Aluminium: d=2.7 g/cm3 ; n=1 ; state=solid
 	+el: name=auto ; n=1
 
-Aluminium: d=2.7 g/cm3 ; n=1 ; state=solid
+Copper: d=8.92 g/cm3 ; n=1 ; state=solid
+	+el: name=auto ; n=1
+
+Beryllium: d=1.85 g/cm3 ; n=1 ; state=solid
 	+el: name=auto ; n=1
 
 Uranium: d=18.90 g/cm3 ; n=1 ; state=solid
 	+el: name=auto ; n=1
 
 Silicon: d=2.33 g/cm3 ; n=1 ; state=solid
+	+el: name=auto ; n=1
+	
+Zinc: d=7.1g/cm3 ; n=1 ; state=solid
 	+el: name=auto ; n=1
 
 Germanium: d=5.32 g/cm3 ; n=1 ; state=solid
@@ -109,11 +81,51 @@ Gadolinium: d=7.9 g/cm3 ; n=1
 Lutetium: d=9.84 g/cm3 ; n=1
 	+el: name=auto ; n=1
 
+Tantalum: d=16.65 g/cm3 ; n=1 ; state=solid
+	+el: name=auto ; n=1
+
+Tungsten: d=19.3 g/cm3 ; n=1 ; state=solid
+	+el: name=auto ; n=1
+
 Lead: d=11.4 g/cm3 ; n=1 ; state=solid
 	+el: name=auto ; n=1
 
 Bismuth: d=9.75 g/cm3 ; n=1 ; state=solid
 	+el: name=auto ; n=1
+
+NaI: d=3.67 g/cm3; n=2;  state=solid
+	+el: name=Sodium ; n=1
+  	+el: name=Iodine ; n=1
+
+PWO: d=8.28 g/cm3; n=3 ; state=Solid
+	+el: name=Lead; n=1
+  	+el: name=Tungsten; n=1
+  	+el: name=Oxygen; n=4
+
+BGO: d=7.13 g/cm3; n= 3 ; state=solid
+	+el: name=Bismuth; n=4
+	+el: name=Germanium; n=3
+	+el: name=Oxygen; n=12
+
+LSO: d=7.4 g/cm3; n=3 ; state=Solid
+	+el: name=Lutetium ; n=2
+	+el: name=Silicon; n=1
+	+el: name=Oxygen; n=5
+
+GSO: d=6.7 g/cm3; n=3 ; state=Solid
+	+el: name=Gadolinium ; n=2
+	+el: name=Silicon; n=1
+	+el: name=Oxygen; n=5
+
+LuAP: d=8.34 g/cm3; n=3 ; state=Solid
+	+el: name=Lutetium ; n=1
+	+el: name=Aluminium; n=1
+	+el: name=Oxygen; n=3
+
+YAP: d=5.55 g/cm3; n=3 ; state=Solid
+	+el: name=Yttrium ; n=1
+	+el: name=Aluminium; n=1
+	+el: name=Oxygen; n=3
 
 Water: d=1.00 g/cm3; n=2 ; state=liquid
 	+el: name=Hydrogen ; n=2
@@ -122,6 +134,21 @@ Water: d=1.00 g/cm3; n=2 ; state=liquid
 Quartz: d=2.2 g/cm3; n=2 ; state=Solid
 	+el: name=Silicon ; n=1
 	+el: name=Oxygen  ; n=2
+
+Kapton: d=1.42 g/cm3 ; n=4
+        +el: name=Hydrogen  ; f=0.026362
+	+el: name=Carbon    ; f=0.691133
+	+el: name=Nitrogen  ; f=0.07327
+	+el: name=Oxygen    ; f=0.209235
+
+Mylar:  d=1.4 g/cm3 ; n=3
+        +el: name=Hydrogen  ; f=0.041958
+	+el: name=Carbon    ; f=0.625017
+	+el: name=Oxygen    ; f=0.333025
+
+Cerrotru: d=8.72 g/cm3; n=2 ; state=Solid
+	+el: name=Bismuth ; f=0.58
+	+el: name=Tin ;     f=0.42
 
 Breast: d=1.020 g/cm3 ; n = 8
 	+el: name=Oxygen;     f=0.5270
@@ -133,18 +160,56 @@ Breast: d=1.020 g/cm3 ; n = 8
 	+el: name=Phosphor;   f=0.0010
 	+el: name=Chlorine ;  f=0.0010
 
+Air: d=1.29 mg/cm3 ; n=4 ; state=gas
+	+el: name=Nitrogen;   f=0.755268
+	+el: name=Oxygen;     f=0.231781
+	+el: name=Argon;      f=0.012827
+	+el: name=Carbon;     f=0.000124
+
+Air2: d=2.58 mg/cm3 ; n=4 ; state=gas
+	+el: name=Nitrogen;   f=0.755268
+	+el: name=Oxygen;     f=0.231781
+	+el: name=Argon;      f=0.012827
+	+el: name=Carbon;     f=0.000124
+
 Glass: d=2.5 g/cm3; n=4;  state=solid
 	+el: name=Sodium ;    f=0.1020
 	+el: name=Calcium;    f=0.0510
 	+el: name=Silicon;    f=0.2480
 	+el: name=Oxygen;     f=0.5990
 
+Plexiglass: d=1.19 g/cm3; n=3; state=solid
+        +el: name=Hydrogen;   f=0.080538
+        +el: name=Carbon;     f=0.599848
+        +el: name=Oxygen;     f=0.319614
+
+Scinti-C9H10: d=1.032 g/cm3 ; n=2
+      	+el: name=Carbon;    n=9
+	+el: name=Hydrogen;  n=10
+
+LuYAP-70: d=7.1 g/cm3 ; n=4
+	+el: name=Lutetium ; n= 7
+	+el: name=Yttrium ;  n= 3
+	+el: name=Aluminium; n=10
+	+el: name=Oxygen;    n=30
+	
+LuYAP-80: d=7.5 g/cm3 ; n=4
+	+el: name=Lutetium ; n= 8
+	+el: name=Yttrium ;  n= 2
+	+el: name=Aluminium; n=10
+	+el: name=Oxygen;    n=30
+	
 Plastic:  d=1.18 g/cm3 ; n=3; state=solid
         +el: name=Carbon ; n=5
         +el: name=Hydrogen ; n=8
         +el: name=Oxygen ; n=2
 
-CZT:  d=5.68 g/cm3 ; n=3; state=solid
+Paraffine:  d=0.8 g/cm3 ; n=3; state=solid
+        +el: name=Carbon ; n=5
+        +el: name=Hydrogen ; n=8
+        +el: name=Oxygen ; n=2
+
+CZT:  d=5.68 g/cm3 ; n=3; state=solid  
         +el: name=Cadmium   ; n=9
         +el: name=Zinc      ; n=1
         +el: name=Tellurium ; n=10
@@ -159,18 +224,6 @@ Lung:  d=0.26 g/cm3 ; n=9
 	+el: name=Sulfur    ; f=0.003
         +el: name=Chlorine  ; f=0.003
         +el: name=Potassium ; f=0.002
-
-DIBHLung:  d=0.2 g/cm3 ; n=9
-        +el: name=Hydrogen  ; f=0.103
-	+el: name=Carbon    ; f=0.105
-	+el: name=Nitrogen  ; f=0.031
-	+el: name=Oxygen    ; f=0.749
-	+el: name=Sodium    ; f=0.002
-	+el: name=Phosphor  ; f=0.002
-	+el: name=Sulfur    ; f=0.003
-        +el: name=Chlorine  ; f=0.003
-        +el: name=Potassium ; f=0.002
-
 
 Polyethylene:  d=0.96 g/cm3 ; n=2
         +el: name=Hydrogen ; n=2
@@ -198,20 +251,11 @@ LYSO:   d=5.37 g/cm3; n=4 ; state=Solid
         +el: name=Silicon; f=0.083209699
         +el: name=Oxygen; f=0.237009356
 
-Body:   d=1.00 g/cm3 ; n=11
+Body:   d=1.00 g/cm3 ; n=2
         +el: name=Hydrogen  ; f=0.112
-        +el: name=Carbon    ; f=0.000
-        +el: name=Nitrogen  ; f=0.000
         +el: name=Oxygen    ; f=0.888
-        +el: name=Phosphor  ; f=0.000
-        +el: name=Calcium   ; f=0.000
-        +el: name=Scandium  ; f=0.0
-        +el: name=Titanium  ; f=0.0
-        +el: name=Vandium   , f=0.0
-        +el: name=Chromium  ; f=0.0
-        +el: name=Manganese ; f=0.0
-
-Muscle: d=1.05 g/cm3 ; n=11
+                                                                                                                                                             
+Muscle: d=1.05 g/cm3 ; n=9
         +el: name=Hydrogen  ; f=0.102
         +el: name=Carbon    ; f=0.143
         +el: name=Nitrogen  ; f=0.034
@@ -221,22 +265,15 @@ Muscle: d=1.05 g/cm3 ; n=11
         +el: name=Sulfur    ; f=0.003
         +el: name=Chlorine  ; f=0.001
         +el: name=Potassium ; f=0.004
-        +el: name=Calcium   ; f=0.0
-        +el: name=Scandium  ; f=0.0
-
-LungMoby: d=0.30 g/cm3 ; n=11
+                                                                                                                                                             
+LungMoby: d=0.30 g/cm3 ; n=6
         +el: name=Hydrogen  ; f=0.099
         +el: name=Carbon    ; f=0.100
         +el: name=Nitrogen  ; f=0.028
         +el: name=Oxygen    ; f=0.740
         +el: name=Phosphor  ; f=0.001
         +el: name=Calcium   ; f=0.032
-        +el: name=Scandium  ; f=0.0
-        +el: name=Titanium  ; f=0.0
-        +el: name=Vandium   , f=0.0
-        +el: name=Chromium  ; f=0.0
-        +el: name=Manganese ; f=0.0
-
+                                                                                                                                                             
 SpineBone: d=1.42 g/cm3 ; n=11
         +el: name=Hydrogen  ; f=0.063
         +el: name=Carbon    ; f=0.261
@@ -249,8 +286,8 @@ SpineBone: d=1.42 g/cm3 ; n=11
         +el: name=Chlorine  ; f=0.001
         +el: name=Potassium ; f=0.001
         +el: name=Calcium   ; f=0.133
-
-RibBone: d=1.92 g/cm3 ; n=11
+                                                                                                                                                             
+RibBone: d=1.92 g/cm3 ; n=9
         +el: name=Hydrogen  ; f=0.034
         +el: name=Carbon    ; f=0.155
         +el: name=Nitrogen  ; f=0.042
@@ -260,23 +297,16 @@ RibBone: d=1.92 g/cm3 ; n=11
         +el: name=Phosphor  ; f=0.103
         +el: name=Sulfur    ; f=0.003
         +el: name=Calcium   ; f=0.225
-        +el: name=Scandium  ; f=0.0
-        +el: name=Titanium  ; f=0.0
 
-Adipose: d=0.92 g/cm3 ; n=11
+Adipose: d=0.92 g/cm3 ; n=6
         +el: name=Hydrogen  ; f=0.120
         +el: name=Carbon    ; f=0.640
         +el: name=Nitrogen  ; f=0.008
         +el: name=Oxygen    ; f=0.229
         +el: name=Phosphor  ; f=0.002
         +el: name=Calcium   ; f=0.001
-        +el: name=Scandium  ; f=0.0
-        +el: name=Titanium  ; f=0.0
-        +el: name=Vandium   , f=0.0
-        +el: name=Chromium  ; f=0.0
-        +el: name=Manganese ; f=0.0
-
-Blood:  d=1.06 g/cm3 ; n=11
+                                                                                                                                                             
+Blood:  d=1.06 g/cm3 ; n=10
         +el: name=Hydrogen  ; f=0.102
         +el: name=Carbon    ; f=0.11
         +el: name=Nitrogen  ; f=0.033
@@ -287,9 +317,8 @@ Blood:  d=1.06 g/cm3 ; n=11
         +el: name=Chlorine  ; f=0.003
         +el: name=Potassium ; f=0.002
         +el: name=Iron      ; f=0.001
-        +el: name=Cobalt    ; f=0.0
 
-Heart:  d=1.05 g/cm3 ; n=11
+Heart:  d=1.05 g/cm3 ; n=9
         +el: name=Hydrogen  ; f=0.104
         +el: name=Carbon    ; f=0.139
         +el: name=Nitrogen  ; f=0.029
@@ -299,10 +328,8 @@ Heart:  d=1.05 g/cm3 ; n=11
         +el: name=Sulfur    ; f=0.002
         +el: name=Chlorine  ; f=0.002
         +el: name=Potassium ; f=0.003
-        +el: name=Calcium   ; f=0.0
-        +el: name=Scandium  ; f=0.0
-
-Kidney: d=1.05 g/cm3 ; n=11
+                                                                                                                                                             
+Kidney: d=1.05 g/cm3 ; n=10
         +el: name=Hydrogen  ; f=0.103
         +el: name=Carbon    ; f=0.132
         +el: name=Nitrogen  ; f=0.03
@@ -313,9 +340,8 @@ Kidney: d=1.05 g/cm3 ; n=11
         +el: name=Chlorine  ; f=0.002
         +el: name=Potassium ; f=0.002
         +el: name=Calcium   ; f=0.001
-        +el: name=Scandium  ; f=0.0
-
-Liver:  d=1.06 g/cm3 ; n=11
+                                                                                                                                                             
+Liver:  d=1.06 g/cm3 ; n=9
         +el: name=Hydrogen  ; f=0.102
         +el: name=Carbon    ; f=0.139
         +el: name=Nitrogen  ; f=0.03
@@ -325,10 +351,8 @@ Liver:  d=1.06 g/cm3 ; n=11
         +el: name=Sulfur    ; f=0.003
         +el: name=Chlorine  ; f=0.002
         +el: name=Potassium ; f=0.003
-        +el: name=Calcium   ; f=0.0
-        +el: name=Scandium  ; f=0.0
 
-Lymph:  d=1.03 g/cm3 ; n=11
+Lymph:  d=1.03 g/cm3 ; n=7
         +el: name=Hydrogen  ; f=0.108
         +el: name=Carbon    ; f=0.041
         +el: name=Nitrogen  ; f=0.011
@@ -336,12 +360,8 @@ Lymph:  d=1.03 g/cm3 ; n=11
         +el: name=Sodium    ; f=0.003
         +el: name=Sulfur    ; f=0.001
         +el: name=Chlorine  ; f=0.004
-        +el: name=Argon     ; f=0.0
-        +el: name=Potassium ; f=0.0
-        +el: name=Calcium   ; f=0.0
-        +el: name=Scandium  ; f=0.0
 
-Pancreas: d=1.04 g/cm3 ; n=11
+Pancreas: d=1.04 g/cm3 ; n=9
         +el: name=Hydrogen  ; f=0.106
         +el: name=Carbon    ; f=0.169
         +el: name=Nitrogen  ; f=0.022
@@ -351,10 +371,8 @@ Pancreas: d=1.04 g/cm3 ; n=11
         +el: name=Sulfur    ; f=0.001
         +el: name=Chlorine  ; f=0.002
         +el: name=Potassium ; f=0.002
-        +el: name=Calcium   ; f=0.0
-        +el: name=Scandium  ; f=0.0
-
-Intestine: d=1.03 g/cm3 ; n=11
+                                                                                                                                                             
+Intestine: d=1.03 g/cm3 ; n=9
         +el: name=Hydrogen  ; f=0.106
         +el: name=Carbon    ; f=0.115
         +el: name=Nitrogen  ; f=0.022
@@ -364,10 +382,8 @@ Intestine: d=1.03 g/cm3 ; n=11
         +el: name=Sulfur    ; f=0.001
         +el: name=Chlorine  ; f=0.002
         +el: name=Potassium ; f=0.001
-        +el: name=Calcium   ; f=0.0
-        +el: name=Scandium  ; f=0.0
-
-Skull:  d=1.61 g/cm3 ; n=11
+                                                                                                                                                             
+Skull:  d=1.61 g/cm3 ; n=9
         +el: name=Hydrogen  ; f=0.05
         +el: name=Carbon    ; f=0.212
         +el: name=Nitrogen  ; f=0.04
@@ -377,10 +393,8 @@ Skull:  d=1.61 g/cm3 ; n=11
         +el: name=Phosphor  ; f=0.081
         +el: name=Sulfur    ; f=0.003
         +el: name=Calcium   ; f=0.176
-        +el: name=Scandium  ; f=0.0
-        +el: name=Titanium  ; f=0.0
 
-Cartilage: d=1.10 g/cm3 ; n=11
+Cartilage: d=1.10 g/cm3 ; n=8
         +el: name=Hydrogen  ; f=0.096
         +el: name=Carbon    ; f=0.099
         +el: name=Nitrogen  ; f=0.022
@@ -389,11 +403,8 @@ Cartilage: d=1.10 g/cm3 ; n=11
         +el: name=Phosphor  ; f=0.022
         +el: name=Sulfur    ; f=0.009
         +el: name=Chlorine  ; f=0.003
-        +el: name=Argon     ; f=0.0
-        +el: name=Potassium ; f=0.0
-        +el: name=Calcium   ; f=0.0
-
-Brain:  d=1.04 g/cm3 ; n=11
+                                                                                                                                                             
+Brain:  d=1.04 g/cm3 ; n=9
         +el: name=Hydrogen  ; f=0.107
         +el: name=Carbon    ; f=0.145
         +el: name=Nitrogen  ; f=0.022
@@ -403,10 +414,8 @@ Brain:  d=1.04 g/cm3 ; n=11
         +el: name=Sulfur    ; f=0.002
         +el: name=Chlorine  ; f=0.003
         +el: name=Potassium ; f=0.003
-        +el: name=Calcium   ; f=0.0
-        +el: name=Scandium  ; f=0.0
 
-Spleen: d=1.06 g/cm3 ; n=11
+Spleen: d=1.06 g/cm3 ; n=9
         +el: name=Hydrogen  ; f=0.103
         +el: name=Carbon    ; f=0.113
         +el: name=Nitrogen  ; f=0.032
@@ -416,116 +425,25 @@ Spleen: d=1.06 g/cm3 ; n=11
         +el: name=Sulfur    ; f=0.002
         +el: name=Chlorine  ; f=0.002
         +el: name=Potassium ; f=0.003
-        +el: name=Calcium   ; f=0.0
-        +el: name=Scandium  ; f=0.0
 
-AcceleratorCollimatorLeafMaterial: d=18 g/cm3; n=3
-	+el: name=Tungsten; f=0.95
-	+el: name=Nickel;   f=0.0375
-	+el: name=Iron;     f=0.0125
+CdTe:   d=5.85 g/cm3 ; n=2; state=solide
+	+el: name=Cadmium ; f=0.468358
+	+el: name=Tellurium ; f=0.531642
 
-AcceleratorTargetMaterial: d=19.4 g/cm3; n=2
-	+el: name=Tungsten; 	f=0.90
-	+el: name=Rhenium;		f=0.10
+PMMA:   d=1.19 g/cm3 ; n=3 ; state=solid
+        +el: name=Hydrogen; f=0.080538
+        +el: name=Carbon; f=0.599848
+	+el: name=Oxygen; f=0.319614
 
 AcceleratorPrimaryCollimatorMaterial: d=18 g/cm3; n=3
 	+el: name=Tungsten; f=0.95
 	+el: name=Nickel;   f=0.0375
 	+el: name=Iron;     f=0.0125
 
-AcceleratorFlatteningFilter: d=7.9 g/cm3; n=3
-	+el: name=Chromium;	f=0.17
-	+el: name=Iron;		f=0.75
-	+el: name=Nickel;	f=0.08
+Jaw: d=18.768 g/cm3; n=4 ; state=Solid
+        +el: name=Tungsten ; f=0.95
+        +el: name=Nickel ; f=0.028
+        +el: name=Iron; f=0.012
+        +el: name=Copper; f=0.01
 
-
-EpidScintillator: d=7.23 g/cm3; n=4; state=solid
-
-	+el: name=Oxygen; 		f=0.112;
- 	+el: name=Sulfur; 		f=0.149;
-	+el: name=Gadolinium; 	f=0.736;
-	+el: name=Terbium; 		f=0.003;
-
-
-PCB: d=3.59 g/cm3; n=8; state=solid
-
-	+el: name=Carbon; 		f=0.005;
- 	+el: name=Chromium; 	f=0.0035;
-	+el: name=Iron; 		f=0.9552;
-	+el: name=Manganese; 	f=0.008;
-	+el: name=Molybden; 	f=0.0077;
-	+el: name=Phosphor; 	f=0.0003;
-	+el: name=Sulfur; 		f=0.0003;
-	+el: name=Silicon; 		f=0.02;
-
-
-GlassSubstrate: d=2.54 g/cm3; n=4; state=solid
-
-	+el: name=Oxygen; 		f=0.4598;
- 	+el: name=Sodium; 		f=0.0965;
-	+el: name=Silicon; 		f=0.3365;
-	+el: name=Calcium; 		f=0.1072;
-
-Graphite: d=2.7 g/cm3; n=1; state=solid
-
-	+el: name=Carbon; 		f=1;
-
-Rohacell51: d=0.052 g/cm3; n=4; state=solid
-	+el: name=Carbon; 		n=14;
- 	+el: name=Hydrogen;		n=10;
-	+el: name=Oxygen; 		n=6;
-	+el: name=Nitrogen; 	        n=2;
-
-GAMMEX_LUNG: d=0.29 g/cm3; n=7; state=solid
-	+el: name=Carbon; 		f=0.5786;
- 	+el: name=Hydrogen;		f=0.0743;
-	+el: name=Oxygen; 		f=0.2071;
-	+el: name=Nitrogen; 	        f=0.0196;
-        +el: name=Chlorine; 	        f=0.0008;
-        +el: name=Magnesium; 	        f=0.1119;
-        +el: name=Silicon; 	        f=0.0077;
-
-
-GAMMEX_BONE: d=1.82 g/cm3; n=7; state=solid
-	+el: name=Carbon; 		f=0.3034;
- 	+el: name=Hydrogen;		f=0.0266;
-	+el: name=Oxygen; 		f=0.3908;
-	+el: name=Nitrogen; 	        f=0.0099;
-        +el: name=Chlorine; 	        f=0.0004;
-        +el: name=Magnesium; 	        f=0.0041;
-        +el: name=Calcium; 	        f=0.2648;
-        
-TiO2: d=4.23 g/cm3; n=2; state=solid
-    +el: name=Oxygen  ; f=0.400592;
-    +el: name=Titanium; f=0.599408;
-
-G4_POLYSTYRENE: d=1.06 g/cm3; n=2; state=solid
-        +el: name:Hydrogen;             f=0.077418;
-        +el: name:Carbon;               f=0.922582;
-
-Rw3: d=1.045 g/cm3; n=2; state=solid
-        +mat: name=TiO2;                 f=0.02;
-        +mat: name=G4_POLYSTYRENE;       f=0.98;
-
-Polyester: d=1.35g/cm3; n=3
-        +el: name=Hydrogen; f=0.04
-        +el: name=Carbon; f=0.63
-        +el: name=Oxygen; f=0.33
-
-Activate: d=1.20g/cm3; n=9
-        +el: name=Hydrogen; f=0.097
-        +el: name=Lithium; f=0.009
-        +el: name=Carbon; f=0.584
-        +el: name=Nitrogen; f=0.001
-        +el: name=Oxygen; f=0.284
-        +el: name=Sodium; f=0.004
-        +el: name=Sulfur; f=0.002
-        +el: name=Chlorine; f=0.011
-        +el: name=Bromine; f=0.008
-
-Air: d=1.29 mg/cm3 ; n=4 ; state=gas
- 	+el: name=Nitrogen;   f=0.755268
- 	+el: name=Oxygen;     f=0.231781
- 	+el: name=Argon;      f=0.012827
- 	+el: name=Carbon;     f=0.000124
         
