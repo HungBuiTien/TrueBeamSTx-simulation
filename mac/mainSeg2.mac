@@ -3,10 +3,33 @@
 
 # Geometry
 /gate/geometry/setMaterialDatabase              data/GateMaterials.db
-/control/execute                                mac/geo/world.mac
-/control/execute                                mac/geo/phsp.mac
-/control/execute                                mac/geo/phantom.mac
-#/control/execute                                mac/geo/filmEBT3.mac
+
+/gate/world/setMaterial Air
+/gate/world/geometry/setXLength                 5.0 m
+/gate/world/geometry/setYLength                 5.0 m
+/gate/world/geometry/setZLength                 5.0 m
+/gate/world/vis/setVisible                      1
+
+/gate/world/daughters/name                      outPhSpCylinder
+/gate/world/daughters/insert                    cylinder
+/gate/outPhSpCylinder/setMaterial               Air
+/gate/outPhSpCylinder/geometry/setRmin          369.9  mm
+/gate/outPhSpCylinder/geometry/setRmax          370 mm
+/gate/outPhSpCylinder/geometry/setHeight        1400 mm
+/gate/outPhSpCylinder/vis/setColor              red
+/gate/outPhSpCylinder/vis/forceWireframe
+#/gate/outPhSpCylinder/vis/forceSolid
+/gate/outPhSpCylinder/vis/setVisible            0
+
+/gate/world/daughters/name                      phantom
+/gate/world/daughters/insert                    box
+/gate/phantom/geometry/setXLength               30 cm
+/gate/phantom/geometry/setYLength               30 cm
+/gate/phantom/geometry/setZLength               30 cm
+/gate/phantom/placement/setTranslation          0 -150 0 mm
+/gate/phantom/setMaterial                       Water
+/gate/phantom/vis/setVisible                    1
+/gate/phantom/vis/setColor                      blue
 
 # Output
 /control/execute                                /mac/actor/saticSeg2.mac
