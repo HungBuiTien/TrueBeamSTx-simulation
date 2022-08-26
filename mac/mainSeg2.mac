@@ -4,13 +4,15 @@
 # Geometry
 /gate/geometry/setMaterialDatabase              data/Materials.db # Set the path to the materials database
 /control/execute                                mac/geo/world.mac
-/control/execute                                mac/geo/phspPlanes.mac
+/control/execute                                mac/geo/phsp.mac
 /control/execute                                mac/geo/phantom.mac
-/control/execute                                mac/geo/filmEBT3.mac
+#/control/execute                                mac/geo/filmEBT3.mac
 
 # Output
-/control/execute                                /mac/actor/saticSeg1.mac
-/control/execute                                /mac/actor/filmRes.mac
+/control/execute                                /mac/actor/saticSeg2.mac
+#/control/execute                                /mac/actor/filmRes.mac
+/control/execute                                /mac/actor/depthDose.mac
+/control/execute                                /mac/actor/doseProfile.mac
 
 # Physics
 /control/execute                                mac/phys/physSeg2.mac
@@ -24,6 +26,6 @@
 # DAQ
 /gate/random/setEngineName                      MersenneTwister # Select a random number engine
 /gate/random/setEngineSeed                      auto 
-/gate/application/setTotalNumberOfPrimaries     20000
+/gate/application/setTotalNumberOfPrimaries     1000000
 /gate/application/start
 /gate/application/describe
