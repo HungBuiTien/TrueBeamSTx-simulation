@@ -1,4 +1,3 @@
 /gate/source/addSource                                      MyBeam phaseSpace
 /gate/source/MyBeam/addPhaseSpaceFile                       output/myIAEA.root
-/gate/application/setTotalNumberOfPrimaries                 NB_PRIM
 /gate/source/MyBeam/attachTo                                outPhSpCylinder

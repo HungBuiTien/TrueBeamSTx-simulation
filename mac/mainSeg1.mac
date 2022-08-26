@@ -2,13 +2,14 @@
 #/control/execute                                mac/visu.mac
 
 # Geometry
-#/gate/geometry/setMaterialDatabase              data/Materials.db
+#/gate/geometry/setMaterialDatabase             data/Materials.db
 /gate/geometry/setMaterialDatabase              data/GateMaterials.db
 /control/execute                                mac/geo/world.mac
 /control/execute                                mac/geo/linacHead.mac
 /control/execute                                mac/geo/phspPlanes.mac
 
 # Output
+/control/execute                                mac/actor/staticSeg1.mac
 /control/execute                                mac/actor/writeIAEA.mac
 
 # Physics
@@ -22,10 +23,9 @@
 
 # DAQ
 /gate/random/setEngineName                      MersenneTwister # Select a random number engine
-/gate/random/setEngineSeed                      auto 
+/gate/random/setEngineSeed                      123456789 
 /gate/application/setTimeSlice                  1. s
 /gate/application/setTimeStart                  0. s
 /gate/application/setTimeStop                   1. s
-#/gate/application/setTotalNumberOfPrimaries    261682249
-/gate/application/setTotalNumberOfPrimaries     20000
+/gate/application/setTotalNumberOfPrimaries     200000
 /gate/application/start
