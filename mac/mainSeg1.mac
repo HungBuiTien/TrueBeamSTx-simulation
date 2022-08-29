@@ -27,5 +27,5 @@
 /gate/application/setTimeSlice                  1. s
 /gate/application/setTimeStart                  0. s
 /gate/application/setTimeStop                   1. s
-/gate/application/setTotalNumberOfPrimaries     200000
+/gate/application/setTotalNumberOfPrimaries     2000000000
 /gate/application/start
