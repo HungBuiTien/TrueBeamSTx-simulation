@@ -2,7 +2,6 @@
 #/control/execute                                mac/visu.mac
 
 # Geometry
-#/gate/geometry/setMaterialDatabase             data/Materials.db
 /gate/geometry/setMaterialDatabase              data/GateMaterials.db
 /control/execute                                mac/geo/world.mac
 /control/execute                                mac/geo/linacHead.mac
