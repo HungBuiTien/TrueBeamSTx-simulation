@@ -24,7 +24,7 @@
 # DAQ
 /gate/random/setEngineName                      MersenneTwister # Select a random number engine
 /gate/random/setEngineSeed                      2579203422 
-/gate/application/setTotalNumberOfPrimaries     100000000
+/gate/application/setTotalNumberOfPrimaries     10000000
 /gate/application/setTimeSlice                  1. s
 /gate/application/setTimeStart                  0. s
 /gate/application/setTimeStop                   1. s

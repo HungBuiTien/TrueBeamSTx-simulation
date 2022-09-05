@@ -1,0 +1,85 @@
+##############################################################
+#
+#  Standard script for Condor in ClusterGATE 
+#  Supply this script to the job splitter command line.
+#  following keywords 
+#   GC_EXEC
+#   GC_MACRO
+#  will be replaced by actual values.
+#  Do not remove any of them! 
+#
+#  The user can edit anything before the "#GJS PART"  
+#  except the line with $GC_EXEC
+#
+#  JDB 3.8.2005
+#    
+##############################################################                                                
+                                                                         
+Executable     = /home/bthung/Softwares/Gate/install/bin/Gate
+universe       = vanilla
+getenv         = true
+#Requirements   = Memory >= 512 && Arch =="INTEL"     
+#Rank	       = Memory >= 512
+#Image_Size     = 28 Meg     
+  
+
+Arguments      = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg11.mac
+Output         = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg11.out
+Error          = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg11.err
+Log            = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg11.log
+Queue
+
+Arguments      = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg12.mac
+Output         = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg12.out
+Error          = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg12.err
+Log            = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg12.log
+Queue
+
+Arguments      = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg13.mac
+Output         = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg13.out
+Error          = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg13.err
+Log            = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg13.log
+Queue
+
+Arguments      = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg14.mac
+Output         = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg14.out
+Error          = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg14.err
+Log            = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg14.log
+Queue
+
+Arguments      = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg15.mac
+Output         = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg15.out
+Error          = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg15.err
+Log            = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg15.log
+Queue
+
+Arguments      = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg16.mac
+Output         = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg16.out
+Error          = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg16.err
+Log            = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg16.log
+Queue
+
+Arguments      = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg17.mac
+Output         = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg17.out
+Error          = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg17.err
+Log            = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg17.log
+Queue
+
+Arguments      = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg18.mac
+Output         = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg18.out
+Error          = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg18.err
+Log            = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg18.log
+Queue
+
+Arguments      = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg19.mac
+Output         = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg19.out
+Error          = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg19.err
+Log            = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg19.log
+Queue
+
+Arguments      = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg110.mac
+Output         = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg110.out
+Error          = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg110.err
+Log            = /home/bthung/Softwares/Gate/.Gate//mainSeg1//mainSeg110.log
+Queue
+
