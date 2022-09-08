@@ -15,12 +15,14 @@
 /gate/inPhantom/vis/forceSolid
 /gate/inPhantom/vis/setVisible                  1
 /control/execute                                mac/geometry/phantom.mac
+/control/execute                                mac/geometry/film.mac
 
 # Output
-/control/execute                                mac/actor/S2Static.mac
-/control/execute                                mac/actor/depthDose.mac
-/control/execute                                mac/actor/doseProfile.mac
-/control/execute                                mac/actor/2Dmap.mac
+#/control/execute                                mac/actor/S2Static.mac
+#/control/execute                                mac/actor/depthDose.mac
+#/control/execute                                mac/actor/doseProfile.mac
+#/control/execute                                mac/actor/2Dmap.mac
+/control/execute                                mac/actor/filmRes.mac
 
 # Physics
 /control/execute                                mac/physics/physics2.mac
