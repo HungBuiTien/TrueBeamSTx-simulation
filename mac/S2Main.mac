@@ -1,0 +1,46 @@
+/control/execute                                mac/others/verbose.mac
+
+# Geometry
+/gate/geometry/setMaterialDatabase              data/materials/GateMaterials.db
+/control/execute                                mac/geometry/world.mac
+# Located upper phantom to investigate field size
+/gate/world/daughters/name                      inPhantom
+/gate/world/daughters/insert                    box
+/gate/inPhantom/geometry/setXLength             400.0 mm
+/gate/inPhantom/geometry/setYLength             0.1 um
+/gate/inPhantom/geometry/setZLength             400.0 mm
+/gate/inPhantom/setMaterial                     Air
+/gate/inPhantom/placement/setTranslation        0.0 0.05 0.0 um
+/gate/inPhantom/vis/setColor                    green
+/gate/inPhantom/vis/forceSolid
+/gate/inPhantom/vis/setVisible                  1
+/control/execute                                mac/geometry/phantom.mac
+
+# Output
+/control/execute                                mac/actor/S2Static.mac
+/control/execute                                mac/actor/depthDose.mac
+/control/execute                                mac/actor/doseProfile.mac
+/control/execute                                mac/actor/2Dmap.mac
+
+# Physics
+/control/execute                                mac/physics/physics2.mac
+
+# Initialize
+/gate/run/initialize
+
+# Source
+/control/execute                                mac/beam/readROOT.mac
+
+# DAQ
+/gate/random/setEngineName                      MersenneTwister # Select a random number engine
+/gate/random/setEngineSeed                      auto 
+/gate/application/setTotalNumberOfPrimaries     10000000
+/gate/application/setTimeSlice                  1. s
+/gate/application/setTimeStart                  0. s
+/gate/application/setTimeStop                   1. s
+/gate/application/start
+#/gate/application/startDAQCluster
+/gate/application/describe
+
+# Visulization
+#/control/execute                                mac/others/visu.mac

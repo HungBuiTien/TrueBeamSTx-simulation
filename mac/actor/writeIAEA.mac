@@ -1,6 +1,6 @@
 /gate/actor/addActor                                        PhaseSpaceActor IAEAPhaseSpaceCyl
-/gate/actor/IAEAPhaseSpaceCyl/save                          output/myIAEA.root
-/gate/actor/IAEAPhaseSpaceCyl/attachTo                      outPhSp
+/gate/actor/IAEAPhaseSpaceCyl/save                          output/Seg1_Sim/myIAEA.root
+/gate/actor/IAEAPhaseSpaceCyl/attachTo                      inPhantom
 /gate/actor/IAEAPhaseSpaceCyl/enableEkine                   true
 /gate/actor/IAEAPhaseSpaceCyl/enableXPosition               true
 /gate/actor/IAEAPhaseSpaceCyl/enableYPosition               true

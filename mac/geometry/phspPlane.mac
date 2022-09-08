@@ -1,0 +1,23 @@
+# Phase space for gaga coordinate
+/gate/myLinacHead/daughters/name                    gaga_vol
+/gate/myLinacHead/daughters/insert                  box
+/gate/gaga_vol/setMaterial                          Air
+/gate/gaga_vol/geometry/setXLength                  0.15 m
+/gate/gaga_vol/geometry/setYLength                  0.001 mm
+/gate/gaga_vol/geometry/setZLength                  0.15 m
+/gate/gaga_vol/vis/setColor                         blue
+/gate/gaga_vol/vis/forceSolid
+/gate/gaga_vol/vis/setVisible                       1
+
+# Located upper phantom to investigate field size
+/gate/world/daughters/name                          inPhantom
+/gate/world/daughters/insert                        box
+/gate/inPhantom/geometry/setXLength                 400.0 mm
+/gate/inPhantom/geometry/setYLength                 0.1 um
+/gate/inPhantom/geometry/setZLength                 400.0 mm
+/gate/inPhantom/setMaterial                         Air
+/gate/inPhantom/placement/setTranslation            0.0 0.05 0.0 um
+/gate/inPhantom/vis/setColor                        green
+/gate/inPhantom/vis/forceSolid
+/gate/inPhantom/vis/setVisible                      1
+

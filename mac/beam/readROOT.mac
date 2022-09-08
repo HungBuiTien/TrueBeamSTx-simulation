@@ -1,0 +1,3 @@
+/gate/source/addSource                                      MyBeam phaseSpace
+/gate/source/MyBeam/addPhaseSpaceFile                       output/Seg1_Sim/myIAEA.root
+/gate/source/MyBeam/attachTo                                inPhantom

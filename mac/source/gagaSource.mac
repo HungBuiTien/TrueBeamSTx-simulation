@@ -1,8 +1,0 @@
-/gate/source/addSource                                      MyBeam phaseSpace
-/gate/source/MyBeam/addPhaseSpaceFile                       phsp/6FFF.pt
-/gate/source/MyBeam/setParticleType                         gamma
-/gate/source/MyBeam/setPytorchParams                        phsp/6FFF.json
-/gate/source/MyBeam/setPytorchBatchSize                     1000000
-/gate/source/MyBeam/attachTo                                gaga_vol
-/gate/source/MyBeam/useRandomSymmetry                       true
-/gate/source/MyBeam/ignoreWeight                            true

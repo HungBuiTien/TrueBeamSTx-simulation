@@ -1,5 +1,5 @@
 /gate/actor/addActor                         DoseActor  2dosemap
-/gate/actor/2dosemap/save                    output/2dDoseMap.txt
+/gate/actor/2dosemap/save                    output/Seg2_Sim/2dDoseMap.mhd
 /gate/actor/2dosemap/attachTo                phantom
 /gate/actor/2dosemap/stepHitType             random
 /gate/actor/2dosemap/setPosition             0 50 0 mm

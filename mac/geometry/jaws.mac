@@ -1,0 +1,54 @@
+# X1
+/gate/myLinacHead/daughters/name                X1
+/gate/myLinacHead/daughters/insert              box
+/gate/X1/setMaterial                            Jaw
+/gate/X1/geometry/setXLength                    134.62 mm
+/gate/X1/geometry/setYLength                    77.724 mm 
+/gate/X1/geometry/setZLength                    218.44 mm
+/gate/X1/placement/setTranslation               87.62218276849424 -403.23525174328853 0.0 mm
+/gate/X1/placement/setRotationAxis              0 0 1
+/gate/X1/placement/setRotationAngle             2.6607900833942186 deg
+/gate/X1/vis/setColor                           white
+/gate/X1/vis/forceSolid
+/gate/X1/vis/setVisible                         1
+
+/gate/myLinacHead/daughters/name                X2
+/gate/myLinacHead/daughters/insert              box
+/gate/X2/setMaterial                            Jaw
+/gate/X2/geometry/setXLength                    134.62 mm
+/gate/X2/geometry/setYLength                    77.724 mm
+/gate/X2/geometry/setZLength                    218.44 mm
+/gate/X2/placement/setTranslation               -87.62218276849424 -403.23525174328853 0.0 mm
+/gate/X2/placement/setRotationAxis              0 0 1
+/gate/X2/placement/setRotationAngle             -2.6607900833942186 deg
+/gate/X2/vis/setColor                           white
+/gate/X2/vis/forceSolid
+/gate/X2/vis/setVisible                         1
+
+# Y1
+/gate/myLinacHead/daughters/name                Y1
+/gate/myLinacHead/daughters/insert              box
+/gate/Y1/setMaterial                            Jaw
+/gate/Y1/geometry/setXLength                    187.96 mm 
+/gate/Y1/geometry/setYLength                    77.724 mm 
+/gate/Y1/geometry/setZLength                    119.38 mm
+/gate/Y1/placement/setTranslation               0.0 -314.65022738322835 -75.57505432437033 mm
+/gate/Y1/placement/setRotationAxis              1 0 0
+/gate/Y1/placement/setRotationAngle             2.6063708540286914 deg
+/gate/Y1/vis/setColor                           white
+/gate/Y1/vis/forceSolid
+/gate/Y1/vis/setVisible                         1
+
+# Y2
+/gate/myLinacHead/daughters/name                Y2
+/gate/myLinacHead/daughters/insert              box
+/gate/Y2/setMaterial                            Jaw
+/gate/Y2/geometry/setXLength                    187.96 mm 
+/gate/Y2/geometry/setYLength                    77.724 mm 
+/gate/Y2/geometry/setZLength                    119.38 mm
+/gate/Y2/placement/setTranslation               0.0 -314.65022738322835 75.57505432437033 mm
+/gate/Y2/placement/setRotationAxis              1 0 0
+/gate/Y1/placement/setRotationAngle             2.6063708540286914 deg
+/gate/Y2/vis/setColor                           white
+/gate/Y2/vis/forceSolid
+/gate/Y2/vis/setVisible                         1

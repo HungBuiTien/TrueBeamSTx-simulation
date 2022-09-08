@@ -1,3 +1,0 @@
-/gate/source/addSource                                      MyBeam phaseSpace
-/gate/source/MyBeam/addPhaseSpaceFile                       output/myIAEA.root
-/gate/source/MyBeam/attachTo                                outPhSpCylinder

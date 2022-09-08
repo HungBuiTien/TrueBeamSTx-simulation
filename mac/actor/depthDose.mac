@@ -1,6 +1,6 @@
 /gate/actor/addActor                            DoseActor  depthdose
-/gate/actor/depthdose/save                      output/Seg2-out/gamma-depth.txt
-/gate/actor/depthdose/attachTo    	          phantom
+/gate/actor/depthdose/save                      output/Seg2_Sim/gamma-depth.txt
+/gate/actor/depthdose/attachTo    	            phantom
 /gate/actor/depthdose/stepHitType               random
 /gate/actor/depthdose/setPosition               0 0 0 cm
 /gate/actor/depthdose/setResolution             1 100 1

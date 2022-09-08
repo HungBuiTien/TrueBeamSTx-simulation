@@ -1,0 +1,3 @@
+/gate/actor/addActor                            SimulationStatisticActor stat
+/gate/actor/stat/save                           output/Seg2_Sim/S2_Static.txt
+/gate/actor/stat/saveEveryNSeconds              60
