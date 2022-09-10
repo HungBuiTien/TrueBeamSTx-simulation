@@ -7,7 +7,6 @@
 /control/execute                                mac/geometry/phspPlane.mac
 
 # Output
-/control/execute                                mac/actor/S1Static.mac
 /control/execute                                mac/actor/writeIAEA.mac
 
 # Physics
@@ -25,9 +24,9 @@
 /gate/application/setTimeSlice                  1. s
 /gate/application/setTimeStart                  0. s
 /gate/application/setTimeStop                   1. s
-/gate/application/setTotalNumberOfPrimaries     2000000
-#/gate/application/start
-/gate/application/startDAQCluster
+/gate/application/setTotalNumberOfPrimaries     3000000
+/gate/application/start
+#/gate/application/startDAQCluster
 
 # Visulization
 #/control/execute                                mac/others/visu.mac

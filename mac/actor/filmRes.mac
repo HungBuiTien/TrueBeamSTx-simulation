@@ -1,5 +1,5 @@
 /gate/actor/addActor                                        DoseActor  doseDistribution
-/gate/actor/doseDistribution/save                           output/doseDistribution.mhd
+/gate/actor/doseDistribution/save                           output/Seg2_Sim/EBT3_results/doseDistribution.mhd
 /gate/actor/doseDistribution/attachTo                       filmBox
 /gate/actor/doseDistribution/stepHitType                    random
 /gate/actor/doseDistribution/setResolution                  100 1 100
@@ -9,4 +9,8 @@
 #/gate/actor/doseDistribution/enableUncertaintyEdep         true
 /gate/actor/doseDistribution/enableDoseToWater              true
 /gate/actor/doseDistribution/enableUncertaintyDoseToWater   true
-/gate/actor/doseDistribution/saveEveryNSeconds              2000
+/gate/actor/doseDistribution/saveEveryNSeconds              60
+
+/gate/actor/addActor                                SimulationStatisticActor stat
+/gate/actor/stat/save                               output/Seg2_Sim/EBT3_results/Static.txt
+/gate/actor/stat/saveEveryNSeconds                  60
