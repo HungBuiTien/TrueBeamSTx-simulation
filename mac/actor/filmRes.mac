@@ -2,15 +2,17 @@
 /gate/actor/doseDistribution/save                           output/Seg2_Sim/EBT3_results/doseDistribution.mhd
 /gate/actor/doseDistribution/attachTo                       filmBox
 /gate/actor/doseDistribution/stepHitType                    random
+/gate/actor/doseDistribution/setPosition                    0 50 0 mm
 /gate/actor/doseDistribution/setResolution                  100 1 100
-/gate/actor/doseDistribution/enableDose                     true
-/gate/actor/doseDistribution/enableUncertaintyDose          true
-#/gate/actor/doseDistribution/enableEdep                    true
-#/gate/actor/doseDistribution/enableUncertaintyEdep         true
-/gate/actor/doseDistribution/enableDoseToWater              true
-/gate/actor/doseDistribution/enableUncertaintyDoseToWater   true
+/gate/actor/doseDistribution/setSize                        50 0.278 50 mm
+/gate/actor/doseDistribution/enableDose                     false
+/gate/actor/doseDistribution/enableUncertaintyDose          false
+/gate/actor/doseDistribution/enableEdep                     true
+/gate/actor/doseDistribution/enableUncertaintyEdep          true
+/gate/actor/doseDistribution/enableDoseToWater              false
+/gate/actor/doseDistribution/enableUncertaintyDoseToWater   false
 /gate/actor/doseDistribution/saveEveryNSeconds              60
 
-/gate/actor/addActor                                SimulationStatisticActor stat
-/gate/actor/stat/save                               output/Seg2_Sim/EBT3_results/Static.txt
-/gate/actor/stat/saveEveryNSeconds                  60
+/gate/actor/addActor                                        SimulationStatisticActor stat
+/gate/actor/stat/save                                       output/Seg2_Sim/EBT3_results/Static.txt
+/gate/actor/stat/saveEveryNSeconds                          60

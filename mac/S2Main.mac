@@ -1,6 +1,8 @@
 /control/execute                                mac/others/verbose.mac
 
+# -----------------------------------------------------------------------------
 # Geometry
+# -----------------------------------------------------------------------------
 /gate/geometry/setMaterialDatabase              data/materials/GateMaterials.db
 /control/execute                                mac/geometry/world.mac
 # Located upper phantom to investigate field size
@@ -15,25 +17,40 @@
 /gate/inPhantom/vis/forceSolid
 /gate/inPhantom/vis/setVisible                  1
 /control/execute                                mac/geometry/phantom.mac
-/control/execute                                mac/geometry/film.mac
 
+# uncomment for EBT3 film
+#/control/execute                                mac/geometry/film.mac
+
+# -----------------------------------------------------------------------------
 # Output
-#/control/execute                                mac/actor/S2Static.mac
-#/control/execute                                mac/actor/depthDose.mac
-#/control/execute                                mac/actor/doseProfile.mac
+# -----------------------------------------------------------------------------
+# That commands for QA problem
+/control/execute                                mac/actor/S2Static.mac
+/control/execute                                mac/actor/depthDose.mac
+/control/execute                                mac/actor/doseProfile.mac
 #/control/execute                                mac/actor/2Dmap.mac
-/control/execute                                mac/actor/filmRes.mac
 
+# This command for EBT3 film
+#/control/execute                                mac/actor/filmRes.mac
+
+# -----------------------------------------------------------------------------
 # Physics
+# -----------------------------------------------------------------------------
 /control/execute                                mac/physics/physics2.mac
 
+# -----------------------------------------------------------------------------
 # Initialize
+# -----------------------------------------------------------------------------
 /gate/run/initialize
 
+# -----------------------------------------------------------------------------
 # Source
+# -----------------------------------------------------------------------------
 /control/execute                                mac/beam/readROOT.mac
 
+# -----------------------------------------------------------------------------
 # DAQ
+# -----------------------------------------------------------------------------
 /gate/random/setEngineName                      MersenneTwister # Select a random number engine
 /gate/random/setEngineSeed                      auto 
 /gate/application/setTotalNumberOfPrimaries     10000000
@@ -41,8 +58,10 @@
 /gate/application/setTimeStart                  0. s
 /gate/application/setTimeStop                   1. s
 /gate/application/start
-#/gate/application/startDAQCluster
-/gate/application/describe
+/gate/application/startDAQCluster
+#/gate/application/describe
 
+# -----------------------------------------------------------------------------
 # Visulization
+# -----------------------------------------------------------------------------
 #/control/execute                                mac/others/visu.mac

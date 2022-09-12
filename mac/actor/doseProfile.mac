@@ -1,5 +1,5 @@
 /gate/actor/addActor                            DoseActor  doseprofile
-/gate/actor/doseprofile/save                    output/Seg2_Sim/gamma-profile.txt
+/gate/actor/doseprofile/save                    output/Seg2_Sim/QA_results/gamma-profile.txt
 /gate/actor/doseprofile/attachTo                phantom
 /gate/actor/doseprofile/stepHitType             random
 /gate/actor/doseprofile/setPosition             0 50 0 mm
