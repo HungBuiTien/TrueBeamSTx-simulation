@@ -2,7 +2,7 @@
 /gate/actor/doseDistribution/save                           output/Seg2_Sim/EBT3_results/doseDistribution.mhd
 /gate/actor/doseDistribution/attachTo                       filmBox
 /gate/actor/doseDistribution/stepHitType                    random
-/gate/actor/doseDistribution/setPosition                    0 50 0 mm
+/gate/actor/doseDistribution/setPosition                    0 0 0 mm
 /gate/actor/doseDistribution/setResolution                  100 1 100
 /gate/actor/doseDistribution/setSize                        50 0.278 50 mm
 /gate/actor/doseDistribution/enableDose                     false
