@@ -1,0 +1,35 @@
+Step 1: Install cluster tools
+
+	sudo apt-get install htcondor -y
+	sudo condor_master
+
+Step 2: Add environment variables
+	Open file .bashrc
+	add 2 lines:
+		+ export GC_DOT_GATE_DIR=/usr/share/gate
+		+ export GC_GATE_EXE_DIR=/usr/share/gate/Gate-install/bin
+
+Step 3: Build and Copy files to ../bin
+	cd /usr/share/gate/Gate/cluster_tools/jobsplitter
+	make
+	sudo cp -rf gjs /usr/share/gate/Gate-install/bin
+	cd /usr/share/gate/Gate/cluster_tools/filemerger
+	make
+	sudo cp -rf gjm /usr/share/gate/Gate-install/bin
+
+Step 4: Turn on the DAQClusterStart
+
+Step 5: Create a submition files
+	/usr/share/gate/Gate/cluster_tools/jobsplitter/gjs -numberofsplits 20 -clusterplatform condor -condorscript /usr/share/gate/Gate/cluster_tools/jobsplitter/script/condor.script mac/S1Main.mac
+	/usr/share/gate/Gate/cluster_tools/jobsplitter/gjs -numberofsplits 500 -clusterplatform condor -condorscript /usr/share/gate/Gate/cluster_tools/jobsplitter/script/condor.script mac/S1Main.mac
+
+Step 6: Submit files
+	cd your_dir
+	condor_submit mac/S1Main.submit
+	condor_submit mac/S2Main.submit
+
+Step 7: Check status
+	condor_q
+
+Step 8: Sum-up results
+	hadd myIAEA.root  myIAEA1.root myIAEA2.root myIAEA3.root myIAEA4.root myIAEA5.root myIAEA6.root myIAEA7.root myIAEA8.root myIAEA9.root myIAEA10.root

@@ -3,7 +3,7 @@
 # -----------------------------------------------------------------------------
 # Geometry
 # -----------------------------------------------------------------------------
-#/gate/geometry/setMaterialDatabase              data/materials/GateMaterials.db
+#/gate/geometry/setMaterialDatabase             data/materials/GateMaterials.db
 /gate/geometry/setMaterialDatabase              data/materials/Materials.db
 /control/execute                                mac/geometry/world.mac
 # Located upper phantom to investigate field size
