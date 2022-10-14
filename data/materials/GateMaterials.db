@@ -49,7 +49,7 @@ Bismuth:    S= Bi  ; Z= 83. ; A= 208.98  g/mole
 Uranium:    S= U   ; Z= 92. ; A= 238.03  g/mole
 
 [Materials]
-Air: d=1.29 mg/cm3 ; n=4 ; state=gas
+Air: d=1.29 mg/cm3 ; n=4
 	+el: name=Nitrogen;   f=0.755268
 	+el: name=Oxygen;     f=0.231781
 	+el: name=Argon;      f=0.012827

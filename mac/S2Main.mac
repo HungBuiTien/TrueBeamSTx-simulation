@@ -3,7 +3,8 @@
 # -----------------------------------------------------------------------------
 # Geometry
 # -----------------------------------------------------------------------------
-/gate/geometry/setMaterialDatabase              data/materials/GateMaterials.db
+#/gate/geometry/setMaterialDatabase              data/materials/GateMaterials.db
+/gate/geometry/setMaterialDatabase              data/materials/Materials.db
 /control/execute                                mac/geometry/world.mac
 # Located upper phantom to investigate field size
 /gate/world/daughters/name                      inPhantom
@@ -58,8 +59,8 @@
 /gate/application/setTimeStart                  0. s
 /gate/application/setTimeStop                   1. s
 /gate/application/start
-/gate/application/startDAQCluster
-#/gate/application/describe
+#/gate/application/startDAQCluster
+/gate/application/describe
 
 # -----------------------------------------------------------------------------
 # Visulization

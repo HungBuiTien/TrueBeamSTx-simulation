@@ -3,8 +3,8 @@
 /gate/actor/depthdose/attachTo    	            phantom
 /gate/actor/depthdose/stepHitType               random
 /gate/actor/depthdose/setPosition               0 0 0 cm
-/gate/actor/depthdose/setResolution             1 100 1
-/gate/actor/depthdose/setVoxelSize              5 3 5 mm
+/gate/actor/depthdose/setResolution             1 300 1
+/gate/actor/depthdose/setVoxelSize              1 1 1 mm
 /gate/actor/depthdose/saveEveryNSeconds         60
 /gate/actor/depthdose/enableEdep                true
 /gate/actor/depthdose/enableUncertaintyEdep     true
