@@ -20,6 +20,10 @@
 # ----------*****----------*****----------*****----------*****----------*****----------
 /control/execute                            mac/rootPSFWriter.mac
 
+/gate/actor/addActor                        SimulationStatisticActor stat
+/gate/actor/stat/save                       output/psf-Static.txt
+/gate/actor/stat/saveEveryNSeconds          60
+
 
 # ----------*****----------*****----------*****----------*****----------*****----------
 # ----------                          INITIALISATION                         ----------
@@ -43,5 +47,4 @@
 /gate/application/setTotalNumberOfPrimaries 1000000
 #/gate/application/start
 /gate/application/startDAQCluster
-
 #/control/execute                            mac/visu.mac

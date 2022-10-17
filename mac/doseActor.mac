@@ -1,0 +1,49 @@
+# 2D map
+/gate/actor/addActor                           DoseActor  2dosemap
+/gate/actor/2dosemap/save                      output/QA-DoseMap.mhd
+/gate/actor/2dosemap/attachTo                  phantom
+/gate/actor/2dosemap/stepHitType               random
+/gate/actor/2dosemap/setPosition               0 50 0 mm
+/gate/actor/2dosemap/setResolution             100 1 100
+/gate/actor/2dosemap/setSize                   300 5 300 mm
+/gate/actor/2dosemap/saveEveryNSeconds         60
+/gate/actor/2dosemap/enableEdep                true
+/gate/actor/2dosemap/enableUncertaintyEdep     true
+/gate/actor/2dosemap/enableDose                false
+/gate/actor/2dosemap/enableUncertaintyDose     false
+/gate/actor/2dosemap/enableNumberOfHits        false
+
+# Depth dose
+/gate/actor/addActor                            DoseActor  depthdose
+/gate/actor/depthdose/save                      output/QA-DepthDose.txt
+/gate/actor/depthdose/attachTo    	            phantom
+/gate/actor/depthdose/stepHitType               random
+/gate/actor/depthdose/setPosition               0 0 0 cm
+/gate/actor/depthdose/setResolution             1 300 1
+/gate/actor/depthdose/setVoxelSize              1 1 1 mm
+/gate/actor/depthdose/saveEveryNSeconds         60
+/gate/actor/depthdose/enableEdep                true
+/gate/actor/depthdose/enableUncertaintyEdep     true
+/gate/actor/depthdose/enableDose                false
+/gate/actor/depthdose/enableUncertaintyDose     false
+/gate/actor/depthdose/enableNumberOfHits        false
+
+# Dose profiles
+/gate/actor/addActor                            DoseActor  doseprofile
+/gate/actor/doseprofile/save                    output/QA-DoseProfiles.txt
+/gate/actor/doseprofile/attachTo                phantom
+/gate/actor/doseprofile/stepHitType             random
+/gate/actor/doseprofile/setPosition             0 50 0 mm
+/gate/actor/doseprofile/setResolution           300 1 1
+/gate/actor/doseprofile/setSize                 300 1 1 mm
+/gate/actor/doseprofile/saveEveryNSeconds       60
+/gate/actor/doseprofile/enableEdep              true
+/gate/actor/doseprofile/enableUncertaintyEdep   true
+/gate/actor/doseprofile/enableDose              false
+/gate/actor/doseprofile/enableUncertaintyDose   false
+/gate/actor/doseprofile/enableNumberOfHits      false
+
+# Static
+/gate/actor/addActor                            SimulationStatisticActor stat
+/gate/actor/stat/save                           output/QA-Static.txt
+/gate/actor/stat/saveEveryNSeconds              30
