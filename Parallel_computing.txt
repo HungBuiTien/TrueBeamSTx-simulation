@@ -6,22 +6,22 @@ Step 1: Install cluster tools
 Step 2: Add environment variables
 	Open file .bashrc
 	add 2 lines:
-		+ export GC_DOT_GATE_DIR=/usr/share/gate
-		+ export GC_GATE_EXE_DIR=/usr/share/gate/Gate-install/bin
+		+ export GC_DOT_GATE_DIR=/home/gate/Softwares/Gate
+		+ export GC_GATE_EXE_DIR=/home/gate/Softwares/Gate/Gate-install/bin
 
 Step 3: Build and Copy files to ../bin
-	cd /usr/share/gate/Gate/cluster_tools/jobsplitter
+	cd /home/gate/Softwares/Gate/Gate/cluster_tools/jobsplitter
 	make
-	sudo cp -rf gjs /usr/share/gate/Gate-install/bin
-	cd /usr/share/gate/Gate/cluster_tools/filemerger
+	sudo cp -rf gjs /home/gate/Softwares/Gate/Gate-install/bin
+	cd /home/gate/Softwares/Gate/Gate/cluster_tools/filemerger
 	make
-	sudo cp -rf gjm /usr/share/gate/Gate-install/bin
+	sudo cp -rf gjm /home/gate/Softwares/Gate/Gate-install/bin
 
 Step 4: Turn on the DAQClusterStart
 
 Step 5: Create a submition files
-	/usr/share/gate/Gate/cluster_tools/jobsplitter/gjs -numberofsplits 20 -clusterplatform condor -condorscript /usr/share/gate/Gate/cluster_tools/jobsplitter/script/condor.script mac/S1Main.mac
-	/usr/share/gate/Gate/cluster_tools/jobsplitter/gjs -numberofsplits 500 -clusterplatform condor -condorscript /usr/share/gate/Gate/cluster_tools/jobsplitter/script/condor.script mac/S1Main.mac
+	/home/gate/Softwares/Gate/Gate/cluster_tools/jobsplitter/gjs -numberofsplits 10 -clusterplatform condor -condorscript /home/gate/Softwares/Gate/Gate/cluster_tools/jobsplitter/script/condor.script mac/S1Main.mac
+	/home/gate/Softwares/Gate/Gate/cluster_tools/jobsplitter/gjs -numberofsplits 500 -clusterplatform condor -condorscript /home/gate/Softwares/Gate/Gate/cluster_tools/jobsplitter/script/condor.script mac/S2Main.mac
 
 Step 6: Submit files
 	cd your_dir
