@@ -1,0 +1,171 @@
+/gate/verbose Physic 1
+/gate/verbose Cuts 1
+/gate/verbose SD 0
+/gate/verbose Actions 0
+/gate/verbose Actor 0
+/gate/verbose Step 0
+/gate/verbose Error 1
+/gate/verbose Warning 1
+/gate/verbose Output 0
+/gate/verbose Beam 0
+/gate/verbose Volume 0
+/gate/verbose Image 0
+/gate/verbose Geometry 0
+/gate/verbose Core 0
+
+/gate/geometry/setMaterialDatabase data/Materials.db
+/gate/world/geometry/setXLength 3. m
+/gate/world/geometry/setYLength 4. m
+/gate/world/geometry/setZLength 3. m
+/gate/world/setMaterial Vacuum
+/gate/world/vis/setVisible 1
+
+/gate/world/daughters/name mylinac
+/gate/world/daughters/insert box
+/gate/mylinac/geometry/setXLength 2.2 m
+/gate/mylinac/geometry/setYLength 1.25 m
+/gate/mylinac/geometry/setZLength 2.2 m
+/gate/mylinac/setMaterial Vacuum
+/gate/mylinac/placement/setRotationAngle 0. deg
+/gate/mylinac/placement/setRotationAxis 0 0 1
+/gate/mylinac/placement/setTranslation 0. 1. 0. m
+/gate/mylinac/vis/setColor red
+/gate/mylinac/vis/setVisible 1
+/gate/mylinac/daughters/name myLinacHead
+/gate/mylinac/daughters/insert box
+/gate/myLinacHead/geometry/setXLength 1.5 m
+/gate/myLinacHead/geometry/setYLength 1.2 m
+/gate/myLinacHead/geometry/setZLength 1.5 m
+/gate/myLinacHead/setMaterial Vacuum
+/gate/myLinacHead/placement/setRotationAxis 0 1 0
+/gate/myLinacHead/placement/setRotationAngle 0.0 deg
+/gate/myLinacHead/vis/setColor green
+/gate/myLinacHead/vis/setVisible 1
+/gate/myLinacHead/daughters/name TBmylar
+/gate/myLinacHead/daughters/insert box
+/gate/TBmylar/setMaterial Mylar
+/gate/TBmylar/geometry/setXLength 500.0 mm
+/gate/TBmylar/geometry/setYLength 0.1016 mm
+/gate/TBmylar/geometry/setZLength 500 mm
+/gate/TBmylar/placement/setTranslation 0.0 -557.0 0.0 mm
+/gate/TBmylar/vis/setColor magenta
+/gate/TBmylar/vis/forceSolid
+/gate/TBmylar/vis/setVisible 1
+/gate/myLinacHead/daughters/name TB_BP
+/gate/myLinacHead/daughters/insert cylinder
+/gate/TB_BP/geometry/setRmax 302.26 mm
+/gate/TB_BP/geometry/setRmin 115.57 mm
+/gate/TB_BP/geometry/setHeight 15.24 mm
+/gate/TB_BP/placement/setTranslation 0.0 -459.38 0.0 mm
+/gate/TB_BP/placement/setRotationAxis 1 0 0
+/gate/TB_BP/placement/setRotationAngle 90 deg
+/gate/TB_BP/setMaterial AcceleratorPrimaryCollimatorMaterial
+/gate/TB_BP/vis/setColor red
+/gate/TB_BP/vis/forceSolid
+/gate/TB_BP/vis/setVisible 1
+
+/gate/myLinacHead/daughters/name gaga_vol
+/gate/myLinacHead/daughters/insert box
+/gate/gaga_vol/geometry/setXLength 0.15 m
+/gate/gaga_vol/geometry/setYLength 0.1 um
+/gate/gaga_vol/geometry/setZLength 0.15 m
+/gate/gaga_vol/setMaterial Vacuum
+/gate/gaga_vol/vis/setColor blue
+/gate/gaga_vol/vis/forceSolid
+/gate/gaga_vol/vis/setVisible 1
+/gate/world/daughters/name inPhantom
+/gate/world/daughters/insert box
+/gate/inPhantom/geometry/setXLength 400 mm
+/gate/inPhantom/geometry/setYLength 0.1 um
+/gate/inPhantom/geometry/setZLength 400 mm
+/gate/inPhantom/setMaterial Vacuum
+/gate/inPhantom/vis/setColor green
+/gate/inPhantom/vis/forceSolid
+/gate/inPhantom/vis/setVisible 1
+
+/gate/myLinacHead/daughters/name X1
+/gate/myLinacHead/daughters/insert box
+/gate/X1/setMaterial Jaw
+/gate/X1/geometry/setXLength 134.62 mm
+/gate/X1/geometry/setYLength 77.724 mm
+/gate/X1/geometry/setZLength 218.44 mm
+/gate/X1/placement/setTranslation 87.62218276849424 -403.23525174328853 0.0 mm
+/gate/X1/placement/setRotationAxis 0 0 1
+/gate/X1/placement/setRotationAngle 2.6607900833942186 deg
+/gate/X1/vis/setColor white
+/gate/X1/vis/forceSolid
+/gate/X1/vis/setVisible 1
+/gate/myLinacHead/daughters/name X2
+/gate/myLinacHead/daughters/insert box
+/gate/X2/setMaterial Jaw
+/gate/X2/geometry/setXLength 134.62 mm
+/gate/X2/geometry/setYLength 77.724 mm
+/gate/X2/geometry/setZLength 218.44 mm
+/gate/X2/placement/setTranslation -87.62218276849424 -403.23525174328853 0.0 mm
+/gate/X2/placement/setRotationAxis 0 0 1
+/gate/X2/placement/setRotationAngle -2.6607900833942186 deg
+/gate/X2/vis/setColor white
+/gate/X2/vis/forceSolid
+/gate/X2/vis/setVisible 1
+/gate/myLinacHead/daughters/name Y1
+/gate/myLinacHead/daughters/insert box
+/gate/Y1/setMaterial Jaw
+/gate/Y1/geometry/setXLength 187.96 mm
+/gate/Y1/geometry/setYLength 77.724 mm
+/gate/Y1/geometry/setZLength 119.38 mm
+/gate/Y1/placement/setTranslation 0.0 -314.65022738322835 -75.57505432437033 mm
+/gate/Y1/placement/setRotationAxis 1 0 0
+/gate/Y1/placement/setRotationAngle 2.6063708540286914 deg
+/gate/Y1/vis/setColor white
+/gate/Y1/vis/forceSolid
+/gate/Y1/vis/setVisible 1
+/gate/myLinacHead/daughters/name Y2
+/gate/myLinacHead/daughters/insert box
+/gate/Y2/setMaterial Jaw
+/gate/Y2/geometry/setXLength 187.96 mm
+/gate/Y2/geometry/setYLength 77.724 mm
+/gate/Y2/geometry/setZLength 119.38 mm
+/gate/Y2/placement/setTranslation 0.0 -314.65022738322835 75.57505432437033 mm
+/gate/Y2/placement/setRotationAxis 1 0 0
+/gate/Y1/placement/setRotationAngle 2.6063708540286914 deg
+/gate/Y2/vis/setColor white
+/gate/Y2/vis/forceSolid
+/gate/Y2/vis/setVisible 1
+
+/gate/physics/addPhysicsList emstandard_opt3
+/gate/actor/addActor PhaseSpaceActor IAEAPhaseSpaceCyl
+/gate/actor/IAEAPhaseSpaceCyl/save output/psf2.root
+/gate/actor/IAEAPhaseSpaceCyl/attachTo inPhantom
+/gate/actor/IAEAPhaseSpaceCyl/enableEkine true
+/gate/actor/IAEAPhaseSpaceCyl/enableXPosition true
+/gate/actor/IAEAPhaseSpaceCyl/enableYPosition true
+/gate/actor/IAEAPhaseSpaceCyl/enableZPosition true
+/gate/actor/IAEAPhaseSpaceCyl/enableXDirection true
+/gate/actor/IAEAPhaseSpaceCyl/enableYDirection true
+/gate/actor/IAEAPhaseSpaceCyl/enableZDirection true
+/gate/actor/IAEAPhaseSpaceCyl/enableProductionVolume false
+/gate/actor/IAEAPhaseSpaceCyl/enableProductionProcess false
+/gate/actor/IAEAPhaseSpaceCyl/enableParticleName true
+/gate/actor/IAEAPhaseSpaceCyl/enableWeight true
+/gate/actor/IAEAPhaseSpaceCyl/useVolumeFrame true
+/gate/actor/IAEAPhaseSpaceCyl/storeSecondaries false
+
+/gate/run/initialize
+/gate/source/addSource MyBeam phaseSpace
+/gate/source/MyBeam/addPhaseSpaceFile psf/gaga/6FFF.pt
+/gate/source/MyBeam/setParticleType gamma
+/gate/source/MyBeam/setPytorchParams psf/gaga/6FFF.json
+/gate/source/MyBeam/setPytorchBatchSize 1000
+/gate/source/MyBeam/attachTo gaga_vol
+/gate/source/MyBeam/useRandomSymmetry true
+/gate/source/MyBeam/ignoreWeight true
+
+/gate/random/setEngineName MersenneTwister
+
+/gate/application/setTimeSlice 1. s
+/gate/application/setTimeStart 0. s
+/gate/application/setTimeStop 1. s
+/gate/application/setTotalNumberOfPrimaries 1000000
+/gate/random/setEngineSeed 2270811632458286720
+/gate/application/startDAQCluster 0.1 0.2 0 s
+

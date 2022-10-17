@@ -1,0 +1,84 @@
+##############################################################
+#
+#  Standard script for Condor in ClusterGATE 
+#  Supply this script to the job splitter command line.
+#  following keywords 
+#   GC_EXEC
+#   GC_MACRO
+#  will be replaced by actual values.
+#  Do not remove any of them! 
+#
+#  The user can edit anything before the "#GJS PART"  
+#  except the line with $GC_EXEC
+#
+#  JDB 3.8.2005
+#    
+##############################################################                                                
+                                                                         
+Executable     = /home/gate/Softwares/Gate/Gate-install/bin/Gate
+universe       = vanilla
+#Requirements   = Memory >= 512 && Arch =="INTEL"     
+#Rank	       = Memory >= 512
+#Image_Size     = 28 Meg     
+  
+
+Arguments      = /home/gate/Softwares/Gate/.Gate//PSF2//PSF1.mac
+Output         = /home/gate/Softwares/Gate/.Gate//PSF2//PSF1.out
+Error          = /home/gate/Softwares/Gate/.Gate//PSF2//PSF1.err
+Log            = /home/gate/Softwares/Gate/.Gate//PSF2//PSF1.log
+Queue
+
+Arguments      = /home/gate/Softwares/Gate/.Gate//PSF2//PSF2.mac
+Output         = /home/gate/Softwares/Gate/.Gate//PSF2//PSF2.out
+Error          = /home/gate/Softwares/Gate/.Gate//PSF2//PSF2.err
+Log            = /home/gate/Softwares/Gate/.Gate//PSF2//PSF2.log
+Queue
+
+Arguments      = /home/gate/Softwares/Gate/.Gate//PSF2//PSF3.mac
+Output         = /home/gate/Softwares/Gate/.Gate//PSF2//PSF3.out
+Error          = /home/gate/Softwares/Gate/.Gate//PSF2//PSF3.err
+Log            = /home/gate/Softwares/Gate/.Gate//PSF2//PSF3.log
+Queue
+
+Arguments      = /home/gate/Softwares/Gate/.Gate//PSF2//PSF4.mac
+Output         = /home/gate/Softwares/Gate/.Gate//PSF2//PSF4.out
+Error          = /home/gate/Softwares/Gate/.Gate//PSF2//PSF4.err
+Log            = /home/gate/Softwares/Gate/.Gate//PSF2//PSF4.log
+Queue
+
+Arguments      = /home/gate/Softwares/Gate/.Gate//PSF2//PSF5.mac
+Output         = /home/gate/Softwares/Gate/.Gate//PSF2//PSF5.out
+Error          = /home/gate/Softwares/Gate/.Gate//PSF2//PSF5.err
+Log            = /home/gate/Softwares/Gate/.Gate//PSF2//PSF5.log
+Queue
+
+Arguments      = /home/gate/Softwares/Gate/.Gate//PSF2//PSF6.mac
+Output         = /home/gate/Softwares/Gate/.Gate//PSF2//PSF6.out
+Error          = /home/gate/Softwares/Gate/.Gate//PSF2//PSF6.err
+Log            = /home/gate/Softwares/Gate/.Gate//PSF2//PSF6.log
+Queue
+
+Arguments      = /home/gate/Softwares/Gate/.Gate//PSF2//PSF7.mac
+Output         = /home/gate/Softwares/Gate/.Gate//PSF2//PSF7.out
+Error          = /home/gate/Softwares/Gate/.Gate//PSF2//PSF7.err
+Log            = /home/gate/Softwares/Gate/.Gate//PSF2//PSF7.log
+Queue
+
+Arguments      = /home/gate/Softwares/Gate/.Gate//PSF2//PSF8.mac
+Output         = /home/gate/Softwares/Gate/.Gate//PSF2//PSF8.out
+Error          = /home/gate/Softwares/Gate/.Gate//PSF2//PSF8.err
+Log            = /home/gate/Softwares/Gate/.Gate//PSF2//PSF8.log
+Queue
+
+Arguments      = /home/gate/Softwares/Gate/.Gate//PSF2//PSF9.mac
+Output         = /home/gate/Softwares/Gate/.Gate//PSF2//PSF9.out
+Error          = /home/gate/Softwares/Gate/.Gate//PSF2//PSF9.err
+Log            = /home/gate/Softwares/Gate/.Gate//PSF2//PSF9.log
+Queue
+
+Arguments      = /home/gate/Softwares/Gate/.Gate//PSF2//PSF10.mac
+Output         = /home/gate/Softwares/Gate/.Gate//PSF2//PSF10.out
+Error          = /home/gate/Softwares/Gate/.Gate//PSF2//PSF10.err
+Log            = /home/gate/Softwares/Gate/.Gate//PSF2//PSF10.log
+Queue
+
