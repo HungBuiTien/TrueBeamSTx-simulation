@@ -1,0 +1,35 @@
+# 2D film response ------------------------------------------------------------
+/gate/actor/addActor                             DoseActor  dose1
+/gate/actor/dose1/save                           output/cc04-dose1.txt
+/gate/actor/dose1/attachTo                       sen1
+/gate/actor/dose1/stepHitType                    random
+/gate/actor/dose1/setPosition                    0 0 0 mm
+/gate/actor/dose1/setResolution                  1 1 1
+/gate/actor/dose1/setSize                        4. 4. 4. mm
+/gate/actor/dose1/enableDose                     false
+/gate/actor/dose1/enableUncertaintyDose          false
+/gate/actor/dose1/enableEdep                     true
+/gate/actor/dose1/enableUncertaintyEdep          true
+/gate/actor/dose1/enableDoseToWater              false
+/gate/actor/dose1/enableUncertaintyDoseToWater   false
+/gate/actor/dose1/saveEveryNSeconds              60
+
+/gate/actor/addActor                             DoseActor  dose2
+/gate/actor/dose2/save                           output/cc04-dose2.txt
+/gate/actor/dose2/attachTo                       sen2
+/gate/actor/dose2/stepHitType                    random
+/gate/actor/dose2/setPosition                    0 0 0 mm
+/gate/actor/dose2/setResolution                  1 1 1
+/gate/actor/dose2/setSize                        4. 4. 4. mm
+/gate/actor/dose2/enableDose                     false
+/gate/actor/dose2/enableUncertaintyDose          false
+/gate/actor/dose2/enableEdep                     true
+/gate/actor/dose2/enableUncertaintyEdep          true
+/gate/actor/dose2/enableDoseToWater              false
+/gate/actor/dose2/enableUncertaintyDoseToWater   false
+/gate/actor/dose2/saveEveryNSeconds              60
+
+# statistic -------------------------------------------------------------------
+/gate/actor/addActor                            SimulationStatisticActor stat
+/gate/actor/stat/save                           output/cc04-static.txt
+/gate/actor/stat/saveEveryNSeconds              60

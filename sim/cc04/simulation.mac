@@ -1,0 +1,17 @@
+/control/verbose 1
+/tracking/verbose 0
+/run/verbose 1
+/event/verbose 0
+
+/run/initialize
+
+# Source
+/control/execute GPS.in
+
+#
+/run/printProgress 1
+
+# Histories
+/run/beamOn 10000000
+
+

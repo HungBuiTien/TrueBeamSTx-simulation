@@ -1,0 +1,34 @@
+/control/execute                                verbose.mac
+
+# Geometry
+/gate/geometry/setMaterialDatabase              data/GateMaterials.db
+/control/execute                                mac/geo/world.mac
+/control/execute                                mac/geo/linacHead.mac
+/control/execute                                mac/geo/phspPlane.mac
+/control/execute                                mac/geo/jaws.mac
+/control/execute                                mac/geo/mlc.mac
+
+# Output
+/control/execute                                mac/actor/rootWriter.mac
+
+# Physics
+/control/execute                                mac/phys/physics.mac
+
+# Initialize
+/gate/run/initialize
+
+# Source
+/control/execute                                mac/beam/gagaBeam.mac
+
+# DAQ
+/gate/random/setEngineName                      MersenneTwister # Select a random number engine
+/gate/random/setEngineSeed                      auto 
+/gate/application/setTimeSlice                  1. s
+/gate/application/setTimeStart                  0. s
+/gate/application/setTimeStop                   1. s
+/gate/application/setTotalNumberOfPrimaries     1000
+/gate/application/start
+#/gate/application/startDAQCluster
+
+# Visulization
+#/control/execute                                visu.mac

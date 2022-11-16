@@ -1,0 +1,85 @@
+##############################################################
+#
+#  Standard script for Condor in ClusterGATE 
+#  Supply this script to the job splitter command line.
+#  following keywords 
+#   GC_EXEC
+#   GC_MACRO
+#  will be replaced by actual values.
+#  Do not remove any of them! 
+#
+#  The user can edit anything before the "#GJS PART"  
+#  except the line with $GC_EXEC
+#
+#  JDB 3.8.2005
+#    
+##############################################################                                                
+                                                                         
+Executable     = /home/bthung/Softwares/Gate9.0/Gate9.0-install/bin/Gate
+universe       = vanilla
+getenv         = true
+#Requirements   = Memory >= 512 && Arch =="INTEL"     
+#Rank	       = Memory >= 512
+#Image_Size     = 28 Meg     
+  
+
+Arguments      = /home/bthung/Softwares/Gate9.0/.Gate//main//main1.mac
+Output         = /home/bthung/Softwares/Gate9.0/.Gate//main//main1.out
+Error          = /home/bthung/Softwares/Gate9.0/.Gate//main//main1.err
+Log            = /home/bthung/Softwares/Gate9.0/.Gate//main//main1.log
+Queue
+
+Arguments      = /home/bthung/Softwares/Gate9.0/.Gate//main//main2.mac
+Output         = /home/bthung/Softwares/Gate9.0/.Gate//main//main2.out
+Error          = /home/bthung/Softwares/Gate9.0/.Gate//main//main2.err
+Log            = /home/bthung/Softwares/Gate9.0/.Gate//main//main2.log
+Queue
+
+Arguments      = /home/bthung/Softwares/Gate9.0/.Gate//main//main3.mac
+Output         = /home/bthung/Softwares/Gate9.0/.Gate//main//main3.out
+Error          = /home/bthung/Softwares/Gate9.0/.Gate//main//main3.err
+Log            = /home/bthung/Softwares/Gate9.0/.Gate//main//main3.log
+Queue
+
+Arguments      = /home/bthung/Softwares/Gate9.0/.Gate//main//main4.mac
+Output         = /home/bthung/Softwares/Gate9.0/.Gate//main//main4.out
+Error          = /home/bthung/Softwares/Gate9.0/.Gate//main//main4.err
+Log            = /home/bthung/Softwares/Gate9.0/.Gate//main//main4.log
+Queue
+
+Arguments      = /home/bthung/Softwares/Gate9.0/.Gate//main//main5.mac
+Output         = /home/bthung/Softwares/Gate9.0/.Gate//main//main5.out
+Error          = /home/bthung/Softwares/Gate9.0/.Gate//main//main5.err
+Log            = /home/bthung/Softwares/Gate9.0/.Gate//main//main5.log
+Queue
+
+Arguments      = /home/bthung/Softwares/Gate9.0/.Gate//main//main6.mac
+Output         = /home/bthung/Softwares/Gate9.0/.Gate//main//main6.out
+Error          = /home/bthung/Softwares/Gate9.0/.Gate//main//main6.err
+Log            = /home/bthung/Softwares/Gate9.0/.Gate//main//main6.log
+Queue
+
+Arguments      = /home/bthung/Softwares/Gate9.0/.Gate//main//main7.mac
+Output         = /home/bthung/Softwares/Gate9.0/.Gate//main//main7.out
+Error          = /home/bthung/Softwares/Gate9.0/.Gate//main//main7.err
+Log            = /home/bthung/Softwares/Gate9.0/.Gate//main//main7.log
+Queue
+
+Arguments      = /home/bthung/Softwares/Gate9.0/.Gate//main//main8.mac
+Output         = /home/bthung/Softwares/Gate9.0/.Gate//main//main8.out
+Error          = /home/bthung/Softwares/Gate9.0/.Gate//main//main8.err
+Log            = /home/bthung/Softwares/Gate9.0/.Gate//main//main8.log
+Queue
+
+Arguments      = /home/bthung/Softwares/Gate9.0/.Gate//main//main9.mac
+Output         = /home/bthung/Softwares/Gate9.0/.Gate//main//main9.out
+Error          = /home/bthung/Softwares/Gate9.0/.Gate//main//main9.err
+Log            = /home/bthung/Softwares/Gate9.0/.Gate//main//main9.log
+Queue
+
+Arguments      = /home/bthung/Softwares/Gate9.0/.Gate//main//main10.mac
+Output         = /home/bthung/Softwares/Gate9.0/.Gate//main//main10.out
+Error          = /home/bthung/Softwares/Gate9.0/.Gate//main//main10.err
+Log            = /home/bthung/Softwares/Gate9.0/.Gate//main//main10.log
+Queue
+

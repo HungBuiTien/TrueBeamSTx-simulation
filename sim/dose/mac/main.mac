@@ -1,0 +1,38 @@
+/control/execute                                verbose.mac
+
+# Geometry --------------------------------------------------------------------
+/gate/geometry/setMaterialDatabase              data/GateMaterials.db
+/control/execute                                mac/geo/world.mac
+/control/execute				            mac/geo/phspPlane.mac
+/control/execute                                mac/geo/phantom.mac
+/control/execute                                mac/geo/film.mac                # uncomment for using EBT3 film geometry
+
+
+# Actor -----------------------------------------------------------------------
+#/control/execute                                mac/actor/qa.mac                # that commands for QA problem
+/control/execute                                mac/actor/filmRes.mac           # uncomment to record dose with EBT3 film
+
+
+# Physics ---------------------------------------------------------------------
+/control/execute                                mac/phys/physics.mac
+
+# Initialize ------------------------------------------------------------------
+/gate/run/initialize
+
+# Source ----------------------------------------------------------------------
+/control/execute                                mac/beam/rootReader.mac
+
+# DAQ -------------------------------------------------------------------------
+/gate/random/setEngineName                      MersenneTwister                 # select a random number engine
+/gate/random/setEngineSeed                      auto 
+/gate/application/setTotalNumberOfPrimaries     10000000
+/gate/application/setTimeSlice                  1. s
+/gate/application/setTimeStart                  0. s
+/gate/application/setTimeStop                   1. s
+/gate/application/start                                                         # used for single calculation
+#/gate/application/startDAQCluster						                        # used for cluster calculation
+#/gate/application/describe
+
+# Visulization ----------------------------------------------------------------
+#/control/execute                                visu.mac
+

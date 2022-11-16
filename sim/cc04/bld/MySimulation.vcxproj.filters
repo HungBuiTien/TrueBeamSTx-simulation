@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Researchs\TrueBeam\sim\cc04\bld\CMakeFiles\0ea8dd107661753a3c8b8989b0dc068b\MySimulation.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Researchs\TrueBeam\sim\cc04\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Researchs\TrueBeam\sim\cc04\bld\CMakeFiles\MySimulation" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{58441492-80C7-3F96-932B-C8E38A15335D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

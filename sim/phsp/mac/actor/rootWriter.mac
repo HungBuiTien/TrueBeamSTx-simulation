@@ -1,0 +1,24 @@
+# ROOT writer -----------------------------------------------------------------
+/gate/actor/addActor                           PhaseSpaceActor phsp
+/gate/actor/phsp/save                          output/phsp.IAEAphsp
+/gate/actor/phsp/attachTo                      inPhantom
+/gate/actor/phsp/enableEkine                   true
+/gate/actor/phsp/enableXPosition               true
+/gate/actor/phsp/enableYPosition               true
+/gate/actor/phsp/enableZPosition               true
+/gate/actor/phsp/enableXDirection              true
+/gate/actor/phsp/enableYDirection              true
+/gate/actor/phsp/enableZDirection              true
+/gate/actor/phsp/enableProductionVolume        false
+/gate/actor/phsp/enableProductionProcess       false
+/gate/actor/phsp/enableParticleName            true
+/gate/actor/phsp/enableWeight                  true
+/gate/actor/phsp/useVolumeFrame                true                             # Store coordinates in the actor coordinates
+# Warning : set this line to true make the particles generated twice
+# when the output file is used as an input
+/gate/actor/phsp/storeSecondaries              false
+
+# Statistic -------------------------------------------------------------------
+/gate/actor/addActor                            SimulationStatisticActor stat
+/gate/actor/stat/save                           output/phsp-static.txt
+/gate/actor/stat/saveEveryNSeconds              60

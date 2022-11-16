@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Researchs\TrueBeam\sim\cc04\MySimulation.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Researchs\TrueBeam\sim\cc04\src\MyActionInitialization.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Researchs\TrueBeam\sim\cc04\src\MyDetectorConstruction.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Researchs\TrueBeam\sim\cc04\src\MyDetectorMessenger.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Researchs\TrueBeam\sim\cc04\src\MyEventAction.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Researchs\TrueBeam\sim\cc04\src\MyPhysicList.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Researchs\TrueBeam\sim\cc04\src\MyPrimaryGenerator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Researchs\TrueBeam\sim\cc04\src\MyRunAction.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Researchs\TrueBeam\sim\cc04\src\MySteppingAction.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Researchs\TrueBeam\sim\cc04\include\MyActionInitialization.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Researchs\TrueBeam\sim\cc04\include\MyAnalysis.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Researchs\TrueBeam\sim\cc04\include\MyDetectorConstruction.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Researchs\TrueBeam\sim\cc04\include\MyDetectorMessenger.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Researchs\TrueBeam\sim\cc04\include\MyEventAction.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Researchs\TrueBeam\sim\cc04\include\MyPhysicList.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Researchs\TrueBeam\sim\cc04\include\MyPrimaryGenerator.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Researchs\TrueBeam\sim\cc04\include\MyRunAction.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Researchs\TrueBeam\sim\cc04\include\MySteppingAction.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Researchs\TrueBeam\sim\cc04\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1B6FEE14-4DB2-395F-B0F9-03C252A645CD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{DA025389-D2A4-3A8C-A7F7-98DB942F31FE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

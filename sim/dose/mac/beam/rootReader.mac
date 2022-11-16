@@ -1,0 +1,3 @@
+/gate/source/addSource                          MyBeam phaseSpace
+/gate/source/MyBeam/addPhaseSpaceFile           phsp/2x2_1E9.root
+/gate/source/MyBeam/attachTo                    inPhantom

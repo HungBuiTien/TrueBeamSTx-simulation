@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "cstdint": "cpp",
+        "ios": "cpp",
+        "memory": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp"
+    }
+}

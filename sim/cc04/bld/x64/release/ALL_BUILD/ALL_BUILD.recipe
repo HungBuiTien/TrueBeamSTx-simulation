@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\Researchs\TrueBeam\sim\cc04\bld\x64\release\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Researchs\TrueBeam\sim\cc04\bld\Release\sim.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\Researchs\TrueBeam\sim\cc04\bld\x64\release\ALL_BUILD</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

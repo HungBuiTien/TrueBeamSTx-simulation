@@ -1,3 +1,0 @@
-/gate/source/addSource                  MyBeam phaseSpace
-/gate/source/MyBeam/addPhaseSpaceFile   psf/test/1000p.IAEAphsp
-/gate/source/MyBeam/attachTo            inPhSpVarian

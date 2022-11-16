@@ -1,0 +1,20 @@
+# 2D film response ------------------------------------------------------------
+/gate/actor/addActor                            DoseActor  dose
+/gate/actor/dose/save                           output/film-dose.mhd
+/gate/actor/dose/attachTo                       filmBox
+/gate/actor/dose/stepHitType                    random
+/gate/actor/dose/setPosition                    0 0 0 mm
+/gate/actor/dose/setResolution                  300 1 300
+/gate/actor/dose/setSize                        150 0.0278 150 mm
+/gate/actor/dose/enableDose                     true
+/gate/actor/dose/enableUncertaintyDose          true
+/gate/actor/dose/enableEdep                     true
+/gate/actor/dose/enableUncertaintyEdep          true
+/gate/actor/dose/enableDoseToWater              false
+/gate/actor/dose/enableUncertaintyDoseToWater   false
+/gate/actor/dose/saveEveryNSeconds              60
+
+# statistic -------------------------------------------------------------------
+/gate/actor/addActor                            SimulationStatisticActor stat
+/gate/actor/stat/save                           output/film-static.txt
+/gate/actor/stat/saveEveryNSeconds              60
